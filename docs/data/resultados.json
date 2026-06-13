@@ -1,0 +1,40 @@
+{
+  "generado": "2026-06-13 10:00 (muestra)",
+  "kpis": {
+    "total_tickets": 200,
+    "phishing_aislados": 11,
+    "procesados": 189,
+    "pct_alto_riesgo": 22.8,
+    "frustracion_promedio": 58.4,
+    "sentimiento_promedio": -0.168
+  },
+  "clasificacion": {
+    "correctivo": 121,
+    "evolutivo": 68
+  },
+  "distribucion_riesgo": {
+    "bajo": 86,
+    "medio": 60,
+    "alto": 43
+  },
+  "sentimiento_hist": {
+    "bins": ["muy negativo", "negativo", "neutro", "positivo", "muy positivo"],
+    "conteo": [22, 51, 63, 35, 18]
+  },
+  "impulsores": [
+    {"variable": "frus_acum", "importancia": 0.341},
+    {"variable": "antiguedad_dias", "importancia": 0.258},
+    {"variable": "frustracion", "importancia": 0.171},
+    {"variable": "reincidencia", "importancia": 0.118},
+    {"variable": "n_tickets", "importancia": 0.072},
+    {"variable": "horas_resolucion", "importancia": 0.040}
+  ],
+  "tickets_alto_riesgo": [
+    {"id": "TK-1042", "cliente": "Cliente C", "clasificacion": "correctivo", "frustracion": 91.0, "riesgo": 93.2, "impulsor": "frus_acum", "recomendacion": "Alerta al account manager: contacto inmediato y plan de retencion"},
+    {"id": "TK-1108", "cliente": "Cliente H", "clasificacion": "correctivo", "frustracion": 88.0, "riesgo": 89.7, "impulsor": "frus_acum", "recomendacion": "Alerta al account manager: contacto inmediato y plan de retencion"},
+    {"id": "TK-1071", "cliente": "Cliente A", "clasificacion": "evolutivo", "frustracion": 74.0, "riesgo": 81.5, "impulsor": "frus_acum", "recomendacion": "Alerta al account manager: contacto inmediato y plan de retencion"},
+    {"id": "TK-1190", "cliente": "Cliente E", "clasificacion": "correctivo", "frustracion": 83.0, "riesgo": 78.9, "impulsor": "frus_acum", "recomendacion": "Alerta al account manager: contacto inmediato y plan de retencion"},
+    {"id": "TK-1003", "cliente": "Cliente C", "clasificacion": "correctivo", "frustracion": 69.0, "riesgo": 74.1, "impulsor": "frus_acum", "recomendacion": "Alerta al account manager: contacto inmediato y plan de retencion"},
+    {"id": "TK-1156", "cliente": "Cliente J", "clasificacion": "evolutivo", "frustracion": 66.0, "riesgo": 70.3, "impulsor": "frus_acum", "recomendacion": "Alerta al account manager: contacto inmediato y plan de retencion"}
+  ]
+}
