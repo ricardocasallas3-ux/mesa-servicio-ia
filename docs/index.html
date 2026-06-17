@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mesa de Servicio Inteligente — Tablero</title>
+<title>Mesa de Servicio Inteligente — IX Comercio / Intcomex</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
@@ -13,38 +13,38 @@
   .sub{font-size:11px;opacity:.8;margin-top:3px}
   .badge-live{background:#00C851;color:#fff;font-size:10px;font-weight:bold;padding:2px 7px;border-radius:10px;margin-left:8px;letter-spacing:.5px}
   .visnav{background:#fff;border-bottom:2px solid #1F4E79;display:flex;align-items:center;padding:0 24px;gap:2px;flex-wrap:wrap}
-  .vistab{padding:10px 18px;cursor:pointer;border:none;background:none;font-size:13px;font-weight:700;color:#666;border-bottom:3px solid transparent;margin-bottom:-2px;transition:.15s}
+  .vistab{padding:10px 16px;cursor:pointer;border:none;background:none;font-size:13px;font-weight:700;color:#666;border-bottom:3px solid transparent;margin-bottom:-2px}
   .vistab.on{color:#1F4E79;border-bottom-color:#1F4E79}
-  .wrap{padding:18px 24px;max-width:1440px;margin:0 auto}
-  .sec{font-size:14px;color:#1F4E79;font-weight:bold;margin:18px 0 10px;padding-bottom:5px;border-bottom:2px solid #1F4E79}
-  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+  .barfiltro{background:#f7f9fc;border-bottom:1px solid #dde3ea;display:flex;align-items:center;padding:8px 24px;gap:8px;flex-wrap:wrap}
+  .barfiltro .lbl{font-size:11px;color:#888;font-weight:700;margin-right:4px}
+  .emptab{padding:5px 14px;cursor:pointer;border:1px solid #ccc;border-radius:20px;background:#fff;font-size:12px;font-weight:600;color:#555}
+  .emptab.on{background:#1F4E79;color:#fff;border-color:#1F4E79}
+  .sep{flex:1}
+  .dlbtn{padding:5px 11px;border:1px solid #2E75B6;border-radius:6px;background:#fff;color:#1F4E79;font-size:11px;font-weight:600;cursor:pointer}
+  .dlbtn:hover{background:#D6E4F0}
+  .wrap{padding:18px 24px;max-width:1480px;margin:0 auto}
+  .sec{font-size:14px;color:#1F4E79;font-weight:bold;margin:16px 0 10px;padding-bottom:5px;border-bottom:2px solid #1F4E79}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
   .kpi{background:#fff;border-radius:8px;padding:13px 15px;box-shadow:0 1px 4px rgba(0,0,0,.08);border-left:4px solid #2E75B6}
   .kpi.warn{border-left-color:#C55A11}.kpi.ok{border-left-color:#375623}.kpi.gris{border-left-color:#888}
   .kl{font-size:10px;color:#777;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}
-  .kv{font-size:22px;font-weight:bold;color:#1F4E79;line-height:1.1}
-  .kv.red{color:#C55A11}.kv.green{color:#375623}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+  .kv{font-size:22px;font-weight:bold;color:#1F4E79;line-height:1.1}.kv.red{color:#C55A11}.kv.green{color:#375623}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
   @media(max-width:860px){.grid2{grid-template-columns:1fr}}
   .card{background:#fff;border-radius:8px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
   .card h3{font-size:11px;color:#1F4E79;font-weight:bold;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
   .ch{position:relative;height:260px}
+  .tablebox{background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:auto;max-height:560px}
   table{width:100%;border-collapse:collapse;font-size:12px}
-  th{background:#1F4E79;color:#fff;padding:8px 10px;text-align:left;font-weight:600;white-space:nowrap}
+  th{background:#1F4E79;color:#fff;padding:8px 10px;text-align:left;font-weight:600;white-space:nowrap;position:sticky;top:0}
   td{padding:7px 10px;border-bottom:1px solid #eee;vertical-align:middle}
   tr:hover td{background:#EBF3FB}
-  .badge{display:inline-block;background:#D6E4F0;color:#1F4E79;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:bold;white-space:nowrap}
-  .bar-wrap{display:flex;align-items:center;gap:6px;min-width:120px}
-  .barh{height:8px;border-radius:4px;min-width:2px;background:#C55A11}
+  .badge{display:inline-block;background:#D6E4F0;color:#1F4E79;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:bold}
+  .pill-alto{background:#C0392B;color:#fff;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:bold}
+  .pill-medio{background:#C55A11;color:#fff;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:bold}
+  .pill-bajo{background:#375623;color:#fff;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:bold}
   .hide{display:none}
-  .dlbar{background:#fff;border-bottom:1px solid #dde3ea;display:flex;align-items:center;gap:8px;padding:8px 24px;flex-wrap:wrap}
-  .dlbar span{font-size:11px;color:#888;font-weight:600;margin-right:4px}
-  .dlbtn{padding:5px 12px;border:1px solid #2E75B6;border-radius:6px;background:#fff;color:#1F4E79;font-size:12px;font-weight:600;cursor:pointer;transition:.12s}
-  .dlbtn:hover{background:#D6E4F0}
-  .dlbar{background:#fff;border-bottom:1px solid #dde3ea;padding:8px 24px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-  .dlbar .lbl{font-size:11px;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.3px}
-  .dlbtn{padding:5px 12px;border:1px solid #1F4E79;border-radius:6px;background:#fff;color:#1F4E79;font-size:12px;font-weight:600;cursor:pointer;transition:.12s}
-  .dlbtn:hover{background:#1F4E79;color:#fff}
-  .empty{color:#999;text-align:center;padding:24px;border:2px dashed #dde3ea;border-radius:8px}
+  .empty{color:#999;text-align:center;padding:24px}
   footer{color:#8a97a6;font-size:11px;padding:14px 24px;border-top:1px solid #dde3ea;margin-top:10px}
 </style>
 </head>
@@ -52,7 +52,7 @@
 <header>
   <div>
     <h1>Mesa de Servicio Inteligente <span class="badge-live">LIVE</span></h1>
-    <div class="sub">Jira · Causas BTI · Operacional · Sentimiento &amp; Riesgo &nbsp;·&nbsp; <span id="generado"></span></div>
+    <div class="sub">IX Comercio &amp; Intcomex · Jira · Causas BTI · Operacional · Incumplimiento al cliente &nbsp;·&nbsp; <span id="generado"></span></div>
   </div>
   <div class="sub">Especialización en IA — CUN</div>
 </header>
@@ -62,182 +62,175 @@
   <button class="vistab" data-vista="bti">Causas BTI</button>
   <button class="vistab" data-vista="jira">Jira</button>
   <button class="vistab" data-vista="operacional">Operacional</button>
-  <button class="vistab" data-vista="tickets">Alto riesgo</button>
+  <button class="vistab" data-vista="am">Account Manager</button>
+  <button class="vistab" data-vista="gerencia">Alta Gerencia</button>
 </nav>
 
-<div class="dlbar">
-  <span>⬇ Descargar:</span>
-  <button class="dlbtn" onclick="dlJSON()">Todo (JSON)</button>
-  <button class="dlbtn" onclick="dlCSV('tickets')">Alto riesgo (CSV)</button>
-  <button class="dlbtn" onclick="dlCSV('bti')">Causas BTI (CSV)</button>
-  <button class="dlbtn" onclick="dlCSV('jira')">Jira (CSV)</button>
-  <button class="dlbtn" onclick="dlCSV('clasificacion')">Clasificación (CSV)</button>
+<div class="barfiltro">
+  <span class="lbl">Empresa:</span>
+  <span id="empresaTabs"></span>
+  <span class="sep"></span>
+  <span class="lbl">⬇</span>
+  <button class="dlbtn" onclick="dlJSON()">JSON</button>
+  <button class="dlbtn" onclick="dlCSV('bti')">BTI</button>
+  <button class="dlbtn" onclick="dlCSV('incumplimiento')">Incumplimiento</button>
+  <button class="dlbtn" onclick="dlCSV('estados')">Estados</button>
 </div>
 
 <div class="wrap">
-
   <section id="vista-resumen">
-    <div class="sec">Indicadores clave</div>
+    <div class="sec">Indicadores — <span id="tituloEmpresa"></span></div>
     <div class="kpis" id="kpis"></div>
-    <div class="sec">Análisis</div>
     <div class="grid2">
-      <div class="card"><h3>Clasificación de tickets</h3><div class="ch"><canvas id="chartClasif"></canvas></div></div>
-      <div class="card"><h3>Distribución del riesgo / frustración</h3><div class="ch"><canvas id="chartRiesgo"></canvas></div></div>
+      <div class="card"><h3>Clasificación (prioridad)</h3><div class="ch"><canvas id="chartClasif"></canvas></div></div>
+      <div class="card"><h3>Riesgo de incumplimiento</h3><div class="ch"><canvas id="chartRiesgo"></canvas></div></div>
     </div>
     <div class="grid2">
-      <div class="card"><h3>Distribución del sentimiento</h3><div class="ch"><canvas id="chartSent"></canvas></div></div>
-      <div class="card"><h3>Principales impulsores del riesgo</h3><div class="ch"><canvas id="chartImp"></canvas></div></div>
+      <div class="card"><h3>Sentimiento</h3><div class="ch"><canvas id="chartSent"></canvas></div></div>
+      <div class="card"><h3>Tendencia mensual</h3><div class="ch"><canvas id="chartTend"></canvas></div></div>
     </div>
-    <div class="card"><h3>Tendencia mensual de tickets</h3><div class="ch"><canvas id="chartTendencia"></canvas></div></div>
   </section>
 
   <section id="vista-bti" class="hide">
-    <div class="sec">Categorización de problemas (Causas BTI)</div>
-    <div class="grid2">
-      <div class="card"><h3>Top causas BTI</h3><div class="ch"><canvas id="chartBti"></canvas></div></div>
-      <div class="card" style="padding:0;overflow:hidden"><table><thead><tr><th>Código</th><th>Descripción</th><th>Casos</th></tr></thead><tbody id="tablaBti"></tbody></table></div>
-    </div>
+    <div class="sec">Causas BTI (todas, ordenables por cantidad)</div>
+    <div class="tablebox" id="tablaBti"></div>
   </section>
 
   <section id="vista-jira" class="hide">
     <div class="sec">Jira — issues</div>
     <div class="kpis" id="kpisJira"></div>
-    <div class="grid2">
-      <div class="card"><h3>Issues por estado</h3><div class="ch"><canvas id="chartJira"></canvas></div></div>
-      <div class="card" style="padding:0;overflow:hidden"><table><thead><tr><th>ID</th><th>Resumen</th><th>Estado</th></tr></thead><tbody id="tablaJira"></tbody></table></div>
-    </div>
+    <div class="tablebox" id="tablaEstados"></div>
   </section>
 
   <section id="vista-operacional" class="hide">
-    <div class="sec">Operacional — órdenes</div>
+    <div class="sec">Operacional</div>
     <div class="kpis" id="kpisOp"></div>
-    <div id="opVacio"></div>
+    <div class="tablebox" id="tablaOp"></div>
   </section>
 
-  <section id="vista-tickets" class="hide">
-    <div class="sec">Tickets de alto riesgo — alerta al account manager</div>
-    <div class="card" style="padding:0;overflow:hidden">
-      <table><thead><tr><th>Ticket</th><th>Cliente</th><th>Clasificación</th><th>Frustración</th><th>Riesgo</th><th>Recomendación</th></tr></thead>
-      <tbody id="tabla"></tbody></table>
+  <section id="vista-am" class="hide">
+    <div class="sec">Account Manager — alertas de incumplimiento al cliente</div>
+    <div class="kpis" id="kpisAm"></div>
+    <div class="tablebox" id="tablaAm"></div>
+  </section>
+
+  <section id="vista-gerencia" class="hide">
+    <div class="sec">Alta Gerencia — visión estratégica</div>
+    <div class="kpis" id="kpisGer"></div>
+    <div class="grid2">
+      <div class="card"><h3>Tickets por empresa</h3><div class="ch"><canvas id="chartEmpresa"></canvas></div></div>
+      <div class="card"><h3>Tendencia mensual</h3><div class="ch"><canvas id="chartTendG"></canvas></div></div>
+    </div>
+    <div class="grid2">
+      <div class="card" style="padding:0"><div class="tablebox" id="tablaPais" style="box-shadow:none"></div></div>
+      <div class="card" style="padding:0"><div class="tablebox" id="tablaMarca" style="box-shadow:none"></div></div>
     </div>
   </section>
-
 </div>
 
-<footer>MVP académico — Especialización en IA (CUN). Datos anonimizados. Índice de riesgo demostrativo.</footer>
+<footer>MVP académico — Especialización en IA (CUN). Datos anonimizados (IX Comercio + Intcomex). Riesgo = incumplimiento al cliente (señales operativas).</footer>
 
 <script>
-const SAMPLE = {
-  "generado":"muestra embebida",
-  "kpis":{"total_tickets":200,"phishing_aislados":11,"procesados":189,"pct_alto_riesgo":22.8,"frustracion_promedio":58.4,"sentimiento_promedio":-0.168},
-  "clasificacion":{"BTI-440":42,"BTI-548":31,"BTI-597":22,"Pendiente":18,"BTI-536":12,"Otros":64},
-  "distribucion_riesgo":{"bajo":86,"medio":60,"alto":43},
-  "sentimiento_hist":{"bins":["muy negativo","negativo","neutro","positivo","muy positivo"],"conteo":[22,51,63,35,18]},
-  "impulsores":[{"variable":"BTI-440","importancia":0.34},{"variable":"BTI-548","importancia":0.26},{"variable":"BTI-597","importancia":0.17}],
-  "bti_tabla":[{"codigo":"BTI-440","descripcion":"Órdenes no llegan al driver","casos":42},{"codigo":"BTI-548","descripcion":"Niveles geográficos — medidas no disponibles","casos":31},{"codigo":"BTI-597","descripcion":"Ship From Store — falla notificación","casos":22}],
-  "jira":{"total":1240,"por_estado":{"Abierto":420,"En progreso":310,"Resuelto":510},"recientes":[{"id":"ID_a1","resumen":"Falla notificación reasignación de tienda","estado":"Abierto"},{"id":"ID_b2","resumen":"Cancelación de órdenes sin stock","estado":"En progreso"}]},
-  "operacional":{"ingresadas_total":3580,"ordenes_total":920},
-  "serie_mensual":{"2026-01":120,"2026-02":150,"2026-03":98,"2026-04":210,"2026-05":175,"2026-06":140},
-  "tickets_alto_riesgo":[{"id":"ID_a1b2","cliente":"ID_a1b2","clasificacion":"BTI-440","frustracion":91,"riesgo":91,"recomendacion":"Contacto inmediato y plan de retención"},{"id":"ID_d4e5","cliente":"ID_d4e5","clasificacion":"BTI-548","frustracion":84,"riesgo":84,"recomendacion":"Seguimiento proactivo"}]
-};
+const SAMPLE = {generado:"muestra", empresas:["Todo","IX Comercio","Intcomex"], vistas:{
+  "Todo":{kpis:{total_tickets:1240,abiertos:540,pct_alto_riesgo:18.5,frustracion_promedio:57.2,sentimiento_promedio:-0.14,incumplimiento_promedio:41.3},
+    clasificacion:{"Alta":320,"Media":510,"Baja":410},distribucion_riesgo:{bajo:700,medio:310,alto:230},
+    sentimiento_hist:{bins:["muy negativo","negativo","neutro","positivo","muy positivo"],conteo:[120,300,500,220,100]},
+    por_estado:{"Nuevo":300,"En progreso":240,"Resuelto":700},serie_mensual:{"2026-01":180,"2026-02":210,"2026-03":260,"2026-04":300,"2026-05":290},
+    bti_tabla:[{codigo:"BTI-483",descripcion:"Desincronización de inventario",casos:140},{codigo:"BTI-440",descripcion:"Órdenes no llegan al driver",casos:96}],
+    operacional:{ingresadas_total:3580,ordenes_total:920,por_accion:{"En revision CO - IT":1200,"Operaciones":900}},
+    incumplimiento:[{id:"ITHD-94869",empresa:"IX Comercio",prioridad:"Alta",estado:"Nuevo",dias:5,frustracion:88,incumplimiento:74,recomendacion:"Incumplimiento inminente: contacto y mitigacion ya",resumen:"Error en OT de la orden"}],
+    gerencia:{por_pais:{"Colombia":700,"Perú":300,"Guatemala":240},por_marca:{"CLIENTE_02":420,"CLIENTE_05":210},por_empresa:{"IX Comercio":820,"Intcomex":420},pct_incumplimiento_alto:18.5}},
+  "IX Comercio":{kpis:{total_tickets:820,abiertos:360,pct_alto_riesgo:20.1,frustracion_promedio:58,sentimiento_promedio:-0.16,incumplimiento_promedio:43},clasificacion:{"Alta":220,"Media":340,"Baja":260},distribucion_riesgo:{bajo:450,medio:210,alto:160},sentimiento_hist:{bins:["muy negativo","negativo","neutro","positivo","muy positivo"],conteo:[90,200,330,140,60]},por_estado:{"Nuevo":200,"En progreso":160,"Resuelto":460},serie_mensual:{"2026-03":170,"2026-04":210,"2026-05":200},bti_tabla:[{codigo:"BTI-483",descripcion:"Desincronización de inventario",casos:110}],operacional:{ingresadas_total:2600,por_accion:{"Operaciones":700}},incumplimiento:[{id:"ITHD-94869",empresa:"IX Comercio",prioridad:"Alta",estado:"Nuevo",dias:5,frustracion:88,incumplimiento:76,recomendacion:"Incumplimiento inminente",resumen:"Error en OT"}],gerencia:{por_pais:{"Colombia":500,"Perú":200},por_marca:{"CLIENTE_02":300},por_empresa:{"IX Comercio":820},pct_incumplimiento_alto:20.1}},
+  "Intcomex":{kpis:{total_tickets:420,abiertos:180,pct_alto_riesgo:15.4,frustracion_promedio:55,sentimiento_promedio:-0.1,incumplimiento_promedio:37},clasificacion:{"Alta":100,"Media":170,"Baja":150},distribucion_riesgo:{bajo:250,medio:100,alto:70},sentimiento_hist:{bins:["muy negativo","negativo","neutro","positivo","muy positivo"],conteo:[30,100,170,80,40]},por_estado:{"Nuevo":100,"En progreso":80,"Resuelto":240},serie_mensual:{"2026-03":90,"2026-04":90,"2026-05":90},bti_tabla:[],operacional:{ingresadas_total:980},incumplimiento:[],gerencia:{por_pais:{"Colombia":200},por_marca:{},por_empresa:{"Intcomex":420},pct_incumplimiento_alto:15.4}}
+}};
 
-const C = {blue:'#1F4E79', blue2:'#2E75B6'};
-const PALETA = ['#1F4E79','#2E75B6','#5B9BD5','#9DC3E6','#C55A11','#ED7D31','#375623','#70AD47'];
-Chart.defaults.font.size = 11; Chart.defaults.color = '#555';
-function kpi(l,v,cls,vcls){return `<div class="kpi ${cls||''}"><div class="kl">${l}</div><div class="kv ${vcls||''}">${v}</div></div>`;}
-function nuevoChart(id,cfg){const el=document.getElementById(id); if(el) new Chart(el,cfg);}
+const C={blue:'#1F4E79',blue2:'#2E75B6'};
+const PALETA=['#1F4E79','#2E75B6','#5B9BD5','#9DC3E6','#C55A11','#ED7D31','#375623','#70AD47','#7B68EE','#C0392B'];
+Chart.defaults.font.size=11; Chart.defaults.color='#555';
 
-// ---- Descargas desde el tablero ----
-let DATA = null;
-function descargar(nombre, contenido, tipo){
-  const blob = new Blob([contenido], {type:tipo});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob); a.download = nombre; a.click();
-  setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
-}
-function dlJSON(){ if(DATA) descargar('resultados.json', JSON.stringify(DATA,null,2), 'application/json'); }
-function toCSV(rows){
-  if(!rows || !rows.length) return '';
-  const cols = Object.keys(rows[0]);
-  const esc = v => '"' + String(v==null?'':v).replace(/"/g,'""') + '"';
-  return cols.join(',') + '\n' + rows.map(r=>cols.map(c=>esc(r[c])).join(',')).join('\n');
-}
-function dlCSV(tipo){
-  if(!DATA){ return; }
-  let rows = [], nombre = '';
-  if(tipo==='tickets'){ rows = DATA.tickets_alto_riesgo || []; nombre = 'tickets_alto_riesgo.csv'; }
-  else if(tipo==='bti'){ rows = DATA.bti_tabla || []; nombre = 'causas_bti.csv'; }
-  else if(tipo==='jira'){ rows = (DATA.jira && DATA.jira.recientes) || []; nombre = 'jira_recientes.csv'; }
-  else if(tipo==='clasificacion'){ rows = Object.entries(DATA.clasificacion||{}).map(([k,v])=>({categoria:k, casos:v})); nombre = 'clasificacion.csv'; }
-  if(!rows.length){ alert('No hay datos para descargar en esa sección.'); return; }
-  descargar(nombre, toCSV(rows), 'text/csv;charset=utf-8');
-}
+let FULL=null, EMP='Todo';
+const CHARTS={};
+function chart(id,cfg){const el=document.getElementById(id); if(!el)return; if(CHARTS[id])CHARTS[id].destroy(); CHARTS[id]=new Chart(el,cfg);}
+function kpi(l,v,cls,vcls){return `<div class="kpi ${cls||''}"><div class="kl">${l}</div><div class="kv ${vcls||''}">${v??'—'}</div></div>`;}
+function dictRows(o,a,b){return Object.entries(o||{}).map(([k,v])=>({[a]:k,[b]:v}));}
 
-function render(d){
-  DATA = d;
-  document.getElementById('generado').textContent = 'Actualizado: ' + (d.generado || '—');
-  const k = d.kpis || {};
-  document.getElementById('kpis').innerHTML = [
-    kpi('Tickets totales', k.total_tickets ?? '—'),
-    kpi('Phishing aislados', k.phishing_aislados ?? '—','warn','red'),
-    kpi('Procesados', k.procesados ?? '—','ok','green'),
-    kpi('% alto riesgo', (k.pct_alto_riesgo ?? '—')+'%','warn','red'),
-    kpi('Frustración prom.', k.frustracion_promedio ?? '—','warn'),
-    kpi('Sentimiento prom.', k.sentimiento_promedio ?? '—', (k.sentimiento_promedio<0?'warn':'ok'), (k.sentimiento_promedio<0?'red':'green'))
+// --- Tablas ordenables (sin tops) ---
+const TABLAS={};
+function tabla(id,rows,cols,sortKey){TABLAS[id]={rows:rows||[],cols,sortKey:sortKey||cols[cols.length-1].k,dir:-1};pintar(id);}
+function ordenar(id,k){const t=TABLAS[id];if(!t)return;if(t.sortKey===k)t.dir*=-1;else{t.sortKey=k;t.dir=-1;}pintar(id);}
+function celda(r,c){const v=r[c.k];if(c.pill){const cl=v>=60?'alto':v>=35?'medio':'bajo';return `<span class="pill-${cl}">${v}</span>`;}if(c.badge)return `<span class="badge">${v??''}</span>`;return v??'';}
+function pintar(id){const t=TABLAS[id];if(!t)return;const{rows,cols,sortKey,dir}=t;
+  if(!rows.length){document.getElementById(id).innerHTML='<div class="empty">Sin datos para esta vista</div>';return;}
+  const s=[...rows].sort((a,b)=>{let x=a[sortKey],y=b[sortKey];if(typeof x==='number'&&typeof y==='number')return (x-y)*dir;return String(x).localeCompare(String(y))*dir;});
+  const head='<tr>'+cols.map(c=>`<th onclick="ordenar('${id}','${c.k}')" style="cursor:pointer">${c.label}${sortKey===c.k?(dir<0?' ▼':' ▲'):''}</th>`).join('')+'</tr>';
+  const body=s.map(r=>'<tr>'+cols.map(c=>`<td>${celda(r,c)}</td>`).join('')+'</tr>').join('');
+  document.getElementById(id).innerHTML='<table><thead>'+head+'</thead><tbody>'+body+'</tbody></table>';}
+
+// --- Descargas ---
+function bajar(n,txt,t){const b=new Blob([txt],{type:t});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=n;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),800);}
+function dlJSON(){if(FULL)bajar('resultados.json',JSON.stringify(FULL,null,2),'application/json');}
+function aCSV(rows){if(!rows||!rows.length)return '';const c=Object.keys(rows[0]);const e=v=>'"'+String(v==null?'':v).replace(/"/g,'""')+'"';return c.join(',')+'\n'+rows.map(r=>c.map(x=>e(r[x])).join(',')).join('\n');}
+function dlCSV(tipo){const v=FULL&&FULL.vistas[EMP];if(!v)return;let rows=[],n='';
+  if(tipo==='bti'){rows=v.bti_tabla||[];n='causas_bti.csv';}
+  else if(tipo==='incumplimiento'){rows=v.incumplimiento||[];n='incumplimiento.csv';}
+  else if(tipo==='estados'){rows=dictRows(v.por_estado,'estado','casos');n='jira_estados.csv';}
+  if(!rows.length){alert('Sin datos para descargar.');return;}bajar(n,aCSV(rows),'text/csv;charset=utf-8');}
+
+function render(){
+  const d=FULL.vistas[EMP];
+  document.getElementById('generado').textContent='Actualizado: '+(FULL.generado||'—');
+  document.getElementById('tituloEmpresa').textContent=EMP;
+  const k=d.kpis||{};
+  document.getElementById('kpis').innerHTML=[
+    kpi('Tickets',k.total_tickets),kpi('Abiertos/en riesgo',k.abiertos,'warn'),
+    kpi('% alto incumpl.',(k.pct_alto_riesgo??'—')+'%','warn','red'),
+    kpi('Incumpl. prom.',k.incumplimiento_promedio,'warn'),
+    kpi('Frustración prom.',k.frustracion_promedio,'warn'),
+    kpi('Sentimiento prom.',k.sentimiento_promedio,(k.sentimiento_promedio<0?'warn':'ok'),(k.sentimiento_promedio<0?'red':'green'))
   ].join('');
+  chart('chartClasif',{type:'doughnut',data:{labels:Object.keys(d.clasificacion||{}),datasets:[{data:Object.values(d.clasificacion||{}),backgroundColor:PALETA}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right'}}}});
+  const r=d.distribucion_riesgo||{};chart('chartRiesgo',{type:'bar',data:{labels:['bajo','medio','alto'],datasets:[{data:[r.bajo,r.medio,r.alto],backgroundColor:['#375623','#C55A11','#C0392B']}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+  const s=d.sentimiento_hist||{bins:[],conteo:[]};chart('chartSent',{type:'bar',data:{labels:s.bins,datasets:[{data:s.conteo,backgroundColor:C.blue2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+  const m=d.serie_mensual||{};const mk=Object.keys(m).sort();chart('chartTend',{type:'line',data:{labels:mk,datasets:[{data:mk.map(x=>m[x]),borderColor:C.blue,backgroundColor:'rgba(31,78,121,.12)',fill:true,tension:.3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
 
-  const cl = d.clasificacion || {};
-  nuevoChart('chartClasif',{type:'doughnut',data:{labels:Object.keys(cl),datasets:[{data:Object.values(cl),backgroundColor:PALETA}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right'}}}});
-  const r = d.distribucion_riesgo || {bajo:0,medio:0,alto:0};
-  nuevoChart('chartRiesgo',{type:'bar',data:{labels:['bajo','medio','alto'],datasets:[{data:[r.bajo,r.medio,r.alto],backgroundColor:['#375623','#C55A11','#C0392B']}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
-  const s = d.sentimiento_hist || {bins:[],conteo:[]};
-  nuevoChart('chartSent',{type:'bar',data:{labels:s.bins,datasets:[{data:s.conteo,backgroundColor:C.blue2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
-  const imp = d.impulsores || [];
-  nuevoChart('chartImp',{type:'bar',data:{labels:imp.map(i=>i.variable),datasets:[{data:imp.map(i=>i.importancia),backgroundColor:C.blue}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true}}}});
-
-  const sm = d.serie_mensual || {};
-  const meses = Object.keys(sm).sort();
-  nuevoChart('chartTendencia',{type:'line',data:{labels:meses,datasets:[{data:meses.map(m=>sm[m]),borderColor:C.blue,backgroundColor:'rgba(31,78,121,.12)',fill:true,tension:.3,pointRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
-
-  // BTI
-  const bti = d.bti_tabla || [];
-  nuevoChart('chartBti',{type:'bar',data:{labels:bti.map(b=>b.codigo),datasets:[{data:bti.map(b=>b.casos),backgroundColor:C.blue2}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true}}}});
-  document.getElementById('tablaBti').innerHTML = bti.length ? bti.map(b=>`<tr><td><span class="badge">${b.codigo}</span></td><td>${b.descripcion||'—'}</td><td>${b.casos}</td></tr>`).join('') : '<tr><td colspan="3" class="empty">Sin datos BTI</td></tr>';
+  // BTI (tabla completa)
+  tabla('tablaBti',d.bti_tabla,[{k:'codigo',label:'Código',badge:true},{k:'descripcion',label:'Descripción'},{k:'casos',label:'Casos'}],'casos');
 
   // Jira
-  const j = d.jira || {};
-  document.getElementById('kpisJira').innerHTML = [
-    kpi('Issues totales', j.total ?? '—'),
-    kpi('Estados', j.por_estado ? Object.keys(j.por_estado).length : '—','gris')
-  ].join('');
-  const pe = j.por_estado || {};
-  nuevoChart('chartJira',{type:'bar',data:{labels:Object.keys(pe),datasets:[{data:Object.values(pe),backgroundColor:PALETA}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
-  const rec = j.recientes || [];
-  document.getElementById('tablaJira').innerHTML = rec.length ? rec.map(t=>`<tr><td><strong>${t.id}</strong></td><td>${t.resumen||''}</td><td><span class="badge">${t.estado||'—'}</span></td></tr>`).join('') : '<tr><td colspan="3" class="empty">Sin issues de Jira</td></tr>';
+  document.getElementById('kpisJira').innerHTML=[kpi('Issues',k.total_tickets),kpi('Estados',Object.keys(d.por_estado||{}).length,'gris')].join('');
+  tabla('tablaEstados',dictRows(d.por_estado,'estado','casos'),[{k:'estado',label:'Estado'},{k:'casos',label:'Casos'}],'casos');
 
   // Operacional
-  const op = d.operacional || {};
-  const opCards = [];
-  if(op.ingresadas_total!=null) opCards.push(kpi('ORs ingresadas', op.ingresadas_total));
-  if(op.ordenes_total!=null) opCards.push(kpi('Órdenes diarias', op.ordenes_total,'ok','green'));
-  document.getElementById('kpisOp').innerHTML = opCards.join('');
-  document.getElementById('opVacio').innerHTML = opCards.length ? '' : '<div class="empty">Sin datos operacionales</div>';
+  const op=d.operacional||{};
+  document.getElementById('kpisOp').innerHTML=[op.ingresadas_total!=null?kpi('ORs ingresadas',op.ingresadas_total):'',op.ordenes_total!=null?kpi('Órdenes diarias',op.ordenes_total,'ok','green'):''].join('');
+  tabla('tablaOp',dictRows(op.por_accion,'accion','casos'),[{k:'accion',label:'Acción operativa'},{k:'casos',label:'Casos'}],'casos');
 
-  // Alto riesgo
-  const tk = d.tickets_alto_riesgo || [];
-  document.getElementById('tabla').innerHTML = tk.length ? tk.map(t=>`<tr><td><strong>${t.id}</strong></td><td>${t.cliente}</td><td><span class="badge">${t.clasificacion||'—'}</span></td><td>${t.frustracion}</td><td><div class="bar-wrap"><span>${t.riesgo}</span><div class="barh" style="width:${Math.min(t.riesgo,100)}px"></div></div></td><td>${t.recomendacion||''}</td></tr>`).join('') : '<tr><td colspan="6" class="empty">Sin tickets de alto riesgo</td></tr>';
+  // Account Manager (incumplimiento)
+  const inc=d.incumplimiento||[];
+  document.getElementById('kpisAm').innerHTML=[kpi('Casos en riesgo',inc.length,'warn','red'),kpi('Incumpl. prom.',k.incumplimiento_promedio,'warn'),kpi('% alto',(k.pct_alto_riesgo??'—')+'%','warn','red')].join('');
+  tabla('tablaAm',inc,[{k:'id',label:'Ticket',badge:true},{k:'empresa',label:'Empresa'},{k:'prioridad',label:'Prioridad'},{k:'estado',label:'Estado'},{k:'dias',label:'Días'},{k:'frustracion',label:'Frustración'},{k:'incumplimiento',label:'Incumpl.',pill:true},{k:'recomendacion',label:'Recomendación'}],'incumplimiento');
+
+  // Alta Gerencia
+  const g=d.gerencia||{};
+  document.getElementById('kpisGer').innerHTML=[kpi('Tickets',k.total_tickets),kpi('% alto incumpl.',(g.pct_incumplimiento_alto??k.pct_alto_riesgo??'—')+'%','warn','red'),kpi('Frustración prom.',k.frustracion_promedio,'warn'),kpi('Sentimiento prom.',k.sentimiento_promedio,(k.sentimiento_promedio<0?'warn':'ok'),(k.sentimiento_promedio<0?'red':'green'))].join('');
+  const pe=g.por_empresa||{};chart('chartEmpresa',{type:'bar',data:{labels:Object.keys(pe),datasets:[{data:Object.values(pe),backgroundColor:['#1F4E79','#C55A11']}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+  chart('chartTendG',{type:'line',data:{labels:mk,datasets:[{data:mk.map(x=>m[x]),borderColor:C.blue,backgroundColor:'rgba(31,78,121,.12)',fill:true,tension:.3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+  tabla('tablaPais',dictRows(g.por_pais,'pais','casos'),[{k:'pais',label:'País'},{k:'casos',label:'Casos'}],'casos');
+  tabla('tablaMarca',dictRows(g.por_marca,'marca','casos'),[{k:'marca',label:'Marca/Cliente'},{k:'casos',label:'Casos'}],'casos');
 }
 
-document.querySelectorAll('.vistab').forEach(b=>{
-  b.addEventListener('click',()=>{
-    document.querySelectorAll('.vistab').forEach(x=>x.classList.remove('on')); b.classList.add('on');
-    ['resumen','bti','jira','operacional','tickets'].forEach(v=>{
-      document.getElementById('vista-'+v).classList.toggle('hide', b.dataset.vista!==v);
-    });
-  });
-});
+function pintarEmpresas(){
+  document.getElementById('empresaTabs').innerHTML=(FULL.empresas||['Todo']).map(e=>`<button class="emptab ${e===EMP?'on':''}" onclick="selEmpresa('${e}')">${e}</button>`).join(' ');
+}
+function selEmpresa(e){EMP=e;pintarEmpresas();render();}
 
-fetch('data/resultados.json').then(r=>{if(!r.ok)throw 0;return r.json();}).then(render).catch(()=>render(SAMPLE));
+document.querySelectorAll('.vistab').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.vistab').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  ['resumen','bti','jira','operacional','am','gerencia'].forEach(v=>document.getElementById('vista-'+v).classList.toggle('hide',b.dataset.vista!==v));
+}));
+
+function iniciar(d){FULL=d;EMP=(d.empresas&&d.empresas[0])||'Todo';pintarEmpresas();render();}
+fetch('data/resultados.json').then(r=>{if(!r.ok)throw 0;return r.json();}).then(iniciar).catch(()=>iniciar(SAMPLE));
 </script>
 </body>
 </html>
