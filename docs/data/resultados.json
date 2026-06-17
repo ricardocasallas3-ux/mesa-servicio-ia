@@ -1,5 +1,5 @@
 {
-  "generado": "2026-06-17 03:18 (datos reales anonimizados)",
+  "generado": "2026-06-17 04:16 (datos reales IX anonimizados)",
   "kpis": {
     "total_tickets": 21526,
     "phishing_aislados": 0,
@@ -9,14 +9,10 @@
     "sentimiento_promedio": -0.302
   },
   "clasificacion": {
-    "Cerrado": 18071,
-    "Finalizada": 1690,
-    "Resuelto": 405,
-    "Nuevo": 242,
-    "Terminado": 230,
-    "En Nivel 1": 206,
-    "Tareas por hacer": 175,
-    "Pendiente de proveedor": 164
+    "Baja": 16790,
+    "Media": 3393,
+    "Alta": 1026,
+    "Crítica": 317
   },
   "distribucion_riesgo": {
     "bajo": 71,
@@ -41,147 +37,375 @@
   },
   "impulsores": [
     {
-      "variable": "Cerrado",
-      "importancia": 0.842
+      "variable": "Baja",
+      "importancia": 0.679
     },
     {
-      "variable": "Finalizada",
-      "importancia": 0.07
+      "variable": "Media",
+      "importancia": 0.222
     },
     {
-      "variable": "Resuelto",
-      "importancia": 0.027
+      "variable": "Alta",
+      "importancia": 0.077
     },
     {
-      "variable": "Nuevo",
-      "importancia": 0.015
-    },
-    {
-      "variable": "Pendiente de proveedor",
-      "importancia": 0.013
-    },
-    {
-      "variable": "En Nivel 1",
-      "importancia": 0.013
+      "variable": "Crítica",
+      "importancia": 0.022
     }
   ],
+  "serie_mensual": {
+    "2022-02": 9,
+    "2022-03": 6,
+    "2022-04": 11,
+    "2022-05": 5,
+    "2022-06": 6,
+    "2022-07": 9,
+    "2022-08": 10,
+    "2022-09": 8,
+    "2022-10": 6,
+    "2022-11": 7,
+    "2022-12": 5,
+    "2023-01": 5,
+    "2023-02": 10,
+    "2023-03": 8,
+    "2023-04": 15,
+    "2023-05": 6,
+    "2023-06": 15,
+    "2023-07": 13,
+    "2023-08": 5,
+    "2023-09": 3,
+    "2023-10": 6,
+    "2023-11": 13,
+    "2023-12": 1,
+    "2024-01": 12,
+    "2024-02": 6,
+    "2024-03": 10,
+    "2024-04": 11,
+    "2024-05": 10,
+    "2024-06": 8,
+    "2024-07": 19,
+    "2024-08": 16,
+    "2024-09": 8,
+    "2024-10": 24,
+    "2024-11": 12,
+    "2024-12": 15,
+    "2025-01": 11,
+    "2025-02": 27,
+    "2025-03": 13,
+    "2025-04": 15,
+    "2025-05": 14,
+    "2025-06": 19,
+    "2025-07": 18,
+    "2025-08": 13,
+    "2025-09": 18,
+    "2025-10": 15,
+    "2025-11": 19,
+    "2025-12": 64,
+    "2026-01": 3129,
+    "2026-02": 3280,
+    "2026-03": 4293,
+    "2026-04": 4159,
+    "2026-05": 4025,
+    "2026-06": 2061
+  },
+  "jira": {
+    "total": 21526,
+    "por_estado": {
+      "Cerrado": 18071,
+      "Finalizada": 1690,
+      "Resuelto": 405,
+      "Nuevo": 242,
+      "Terminado": 230,
+      "En Nivel 1": 206,
+      "Tareas por hacer": 175,
+      "Pendiente de proveedor": 164
+    },
+    "recientes": [
+      {
+        "id": "ITHD-94869",
+        "resumen": "Error en la OT de la orden R_36657-CLIENTE_02_COL_CCSCOWL180 de la tienda La Ser",
+        "estado": "Nuevo"
+      },
+      {
+        "id": "ITSD-82393",
+        "resumen": "ERROR EN CALIFICACIÓN DE NUEVO LEAD // IDENTIFICACIÓN: [NUM]",
+        "estado": "Resuelto"
+      },
+      {
+        "id": "ITSD-82413",
+        "resumen": "Solicitud de Licencia Claude IA",
+        "estado": "En Nivel 1"
+      },
+      {
+        "id": "ITSD-82412",
+        "resumen": "Crear RW de WD",
+        "estado": "Resuelto"
+      },
+      {
+        "id": "ITSD-82397",
+        "resumen": "Habilitar usuario y generar nuevo link de activación",
+        "estado": "En consulta a usuario"
+      },
+      {
+        "id": "ITSD-82409",
+        "resumen": "Crear RW de Apple M1",
+        "estado": "No Resuelto"
+      },
+      {
+        "id": "ITSD-82410",
+        "resumen": "Error Login Partner Center",
+        "estado": "En Nivel 1"
+      },
+      {
+        "id": "ITSD-82296",
+        "resumen": "Se solicita reset MFA del correo del gerente Juan Luis Guerra",
+        "estado": "Cerrado"
+      },
+      {
+        "id": "ITSD-82367",
+        "resumen": "Busqueda de evento en camaras",
+        "estado": "Cerrado"
+      },
+      {
+        "id": "ITSD-82414",
+        "resumen": "Se está presentando problemas con la sincronización de casos entre aterra y jira",
+        "estado": "En Nivel 1"
+      },
+      {
+        "id": "ITHD-94868",
+        "resumen": "No llega la guía de la orden #1898 de la tienda Altaplaza",
+        "estado": "Nuevo"
+      },
+      {
+        "id": "ITSD-82207",
+        "resumen": "Solicito acceso a Dashboard BI - Inventory Days (Avg 12 weeks)",
+        "estado": "Cerrado"
+      },
+      {
+        "id": "ITSD-82328",
+        "resumen": "Adicionar a usuario a grupo GP-CLAUDE",
+        "estado": "Resuelto"
+      },
+      {
+        "id": "ITSD-82411",
+        "resumen": "Liberación de usuarios",
+        "estado": "Nuevo"
+      },
+      {
+        "id": "ITSD-82402",
+        "resumen": "Agregar Carrier a Usuarios Webstore",
+        "estado": "En Nivel 1"
+      }
+    ]
+  },
+  "bti_tabla": [
+    {
+      "codigo": "BTI-459",
+      "descripcion": "Fallo de Facturación: Órdenes de Venta (OR) se quedan en estado 'PROVIDER_ORDER_RELEASED' ",
+      "casos": 2601
+    },
+    {
+      "codigo": "BTI-566",
+      "descripcion": "Retención de órdenes Mercado Libre \"Fulfill By\" post-entrega (Stock Fantasma)-CANCELACIONE",
+      "casos": 950
+    },
+    {
+      "codigo": "Operacional",
+      "descripcion": "Configuracion de producto",
+      "casos": 656
+    },
+    {
+      "codigo": "BTI-537",
+      "descripcion": "Fallo en notificación de la guia desde Driver hacia Microtarifario",
+      "casos": 489
+    },
+    {
+      "codigo": "Sin falla al revisar",
+      "descripcion": "Sin falla al revisar",
+      "casos": 363
+    },
+    {
+      "codigo": "BTI-547",
+      "descripcion": "IWS(TimeOut)",
+      "casos": 360
+    },
+    {
+      "codigo": "BTI-483",
+      "descripcion": "Desincronización de Inventario (CLIENTE_02/KC)",
+      "casos": 352
+    },
+    {
+      "codigo": "BTI-608",
+      "descripcion": "Ordenes con estado despachado y en VTEX salen como Ready for Handling (relacionado BTI-390",
+      "casos": 256
+    },
+    {
+      "codigo": "BTI-593",
+      "descripcion": "Diferencia de valores en órdenes por exclusión de descuentos tipo Channel",
+      "casos": 239
+    },
+    {
+      "codigo": "BTI-559",
+      "descripcion": "Duplicidad de peticiones y bloqueo de órdenes en flujo por Error 8812 (Record Locked) en A",
+      "casos": 232
+    },
+    {
+      "codigo": "Falla Yuju 24/01/2026",
+      "descripcion": "Caída Masiva del Servicio de Órdenes Yuju (24/01 - 26/01)",
+      "casos": 209
+    },
+    {
+      "codigo": "sin falla al revisar",
+      "descripcion": "sin falla al revisar",
+      "casos": 203
+    },
+    {
+      "codigo": "One time",
+      "descripcion": "Orden Sin Stock CLIENTE_05 CL",
+      "casos": 186
+    },
+    {
+      "codigo": "BTI-440",
+      "descripcion": "ordenes no llegan al Driver desde CLIENTE_04",
+      "casos": 154
+    },
+    {
+      "codigo": "BTI-586",
+      "descripcion": "Time Out |Driver 1 - 2",
+      "casos": 124
+    }
+  ],
+  "operacional": {
+    "ingresadas_total": 10097,
+    "por_accion": {
+      "En revision CO - IT": 8223,
+      "": 1128,
+      "Alistamiento": 351,
+      "Facturada": 138,
+      "Pendiente revision ordenes by fulfilment": 90,
+      "facturada": 70,
+      "cancelada": 38,
+      "Cancelada": 21
+    },
+    "ordenes_total": 49
+  },
   "tickets_alto_riesgo": [
     {
-      "id": "161215",
-      "cliente": "161215",
-      "clasificacion": "Cerrado",
+      "id": "ITSD-8043",
+      "cliente": "ITSD-8043",
+      "clasificacion": "Media",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "366290",
-      "cliente": "366290",
-      "clasificacion": "Nuevo",
+      "id": "ITHD-94869",
+      "cliente": "ITHD-94869",
+      "clasificacion": "Alta",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "366240",
-      "cliente": "366240",
-      "clasificacion": "Resuelto",
+      "id": "ITSD-82393",
+      "cliente": "ITSD-82393",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "301223",
-      "cliente": "301223",
-      "clasificacion": "Cerrado",
+      "id": "ITSD-64395",
+      "cliente": "ITSD-64395",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "302416",
-      "cliente": "302416",
-      "clasificacion": "Cerrado",
+      "id": "ITSD-64746",
+      "cliente": "ITSD-64746",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "302801",
-      "cliente": "302801",
-      "clasificacion": "Cerrado",
+      "id": "ITSD-64825",
+      "cliente": "ITSD-64825",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "303072",
-      "cliente": "303072",
-      "clasificacion": "Cerrado",
+      "id": "ITSD-64928",
+      "cliente": "ITSD-64928",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "303646",
-      "cliente": "303646",
-      "clasificacion": "Cerrado",
+      "id": "ITSD-65071",
+      "cliente": "ITSD-65071",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "304361",
-      "cliente": "304361",
-      "clasificacion": "Cerrado",
+      "id": "ITSD-65284",
+      "cliente": "ITSD-65284",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "304812",
-      "cliente": "304812",
-      "clasificacion": "Cerrado",
+      "id": "ITSD-65395",
+      "cliente": "ITSD-65395",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "365799",
-      "cliente": "365799",
-      "clasificacion": "Recategorización",
+      "id": "ITSD-82304",
+      "cliente": "ITSD-82304",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "364783",
-      "cliente": "364783",
-      "clasificacion": "Nuevo",
+      "id": "ITHD-94808",
+      "cliente": "ITHD-94808",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "364937",
-      "cliente": "364937",
-      "clasificacion": "En Nivel 1",
+      "id": "ITSD-82024",
+      "cliente": "ITSD-82024",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "366243",
-      "cliente": "366243",
-      "clasificacion": "Cerrado",
+      "id": "ITSD-82395",
+      "cliente": "ITSD-82395",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
     },
     {
-      "id": "365343",
-      "cliente": "365343",
-      "clasificacion": "En Nivel 1",
+      "id": "ITSD-82166",
+      "cliente": "ITSD-82166",
+      "clasificacion": "Baja",
       "frustracion": 100.0,
       "riesgo": 100.0,
       "recomendacion": "Contacto inmediato y plan de retencion"
