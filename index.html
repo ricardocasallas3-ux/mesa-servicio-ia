@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mesa de Servicio Inteligente — Tablero</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Arial,sans-serif;background:#f0f4f8;color:#222;font-size:13px}
+  header{background:#1F4E79;color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  header h1{font-size:16px;font-weight:bold;display:flex;align-items:center}
+  .sub{font-size:11px;opacity:.8;margin-top:3px}
+  .badge-live{background:#00C851;color:#fff;font-size:10px;font-weight:bold;padding:2px 7px;border-radius:10px;margin-left:8px;letter-spacing:.5px}
+  .visnav{background:#fff;border-bottom:2px solid #1F4E79;display:flex;align-items:center;padding:0 24px;gap:2px;flex-wrap:wrap}
+  .vistab{padding:10px 18px;cursor:pointer;border:none;background:none;font-size:13px;font-weight:700;color:#666;border-bottom:3px solid transparent;margin-bottom:-2px;transition:.15s}
+  .vistab.on{color:#1F4E79;border-bottom-color:#1F4E79}
+  .wrap{padding:18px 24px;max-width:1440px;margin:0 auto}
+  .sec{font-size:14px;color:#1F4E79;font-weight:bold;margin:18px 0 10px;padding-bottom:5px;border-bottom:2px solid #1F4E79}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+  .kpi{background:#fff;border-radius:8px;padding:13px 15px;box-shadow:0 1px 4px rgba(0,0,0,.08);border-left:4px solid #2E75B6}
+  .kpi.warn{border-left-color:#C55A11}.kpi.ok{border-left-color:#375623}.kpi.gris{border-left-color:#888}
+  .kl{font-size:10px;color:#777;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}
+  .kv{font-size:22px;font-weight:bold;color:#1F4E79;line-height:1.1}
+  .kv.red{color:#C55A11}.kv.green{color:#375623}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+  @media(max-width:860px){.grid2{grid-template-columns:1fr}}
+  .card{background:#fff;border-radius:8px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  .card h3{font-size:11px;color:#1F4E79;font-weight:bold;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+  .ch{position:relative;height:260px}
+  table{width:100%;border-collapse:collapse;font-size:12px}
+  th{background:#1F4E79;color:#fff;padding:8px 10px;text-align:left;font-weight:600;white-space:nowrap}
+  td{padding:7px 10px;border-bottom:1px solid #eee;vertical-align:middle}
+  tr:hover td{background:#EBF3FB}
+  .badge{display:inline-block;background:#D6E4F0;color:#1F4E79;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:bold;white-space:nowrap}
+  .bar-wrap{display:flex;align-items:center;gap:6px;min-width:120px}
+  .barh{height:8px;border-radius:4px;min-width:2px;background:#C55A11}
+  .hide{display:none}
+  .dlbar{background:#fff;border-bottom:1px solid #dde3ea;display:flex;align-items:center;gap:8px;padding:8px 24px;flex-wrap:wrap}
+  .dlbar span{font-size:11px;color:#888;font-weight:600;margin-right:4px}
+  .dlbtn{padding:5px 12px;border:1px solid #2E75B6;border-radius:6px;background:#fff;color:#1F4E79;font-size:12px;font-weight:600;cursor:pointer;transition:.12s}
+  .dlbtn:hover{background:#D6E4F0}
+  .dlbar{background:#fff;border-bottom:1px solid #dde3ea;padding:8px 24px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .dlbar .lbl{font-size:11px;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.3px}
+  .dlbtn{padding:5px 12px;border:1px solid #1F4E79;border-radius:6px;background:#fff;color:#1F4E79;font-size:12px;font-weight:600;cursor:pointer;transition:.12s}
+  .dlbtn:hover{background:#1F4E79;color:#fff}
+  .empty{color:#999;text-align:center;padding:24px;border:2px dashed #dde3ea;border-radius:8px}
+  footer{color:#8a97a6;font-size:11px;padding:14px 24px;border-top:1px solid #dde3ea;margin-top:10px}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Mesa de Servicio Inteligente <span class="badge-live">LIVE</span></h1>
+    <div class="sub">Jira · Causas BTI · Operacional · Sentimiento &amp; Riesgo &nbsp;·&nbsp; <span id="generado"></span></div>
+  </div>
+  <div class="sub">Especialización en IA — CUN</div>
+</header>
+
+<nav class="visnav">
+  <button class="vistab on" data-vista="resumen">Resumen</button>
+  <button class="vistab" data-vista="bti">Causas BTI</button>
+  <button class="vistab" data-vista="jira">Jira</button>
+  <button class="vistab" data-vista="operacional">Operacional</button>
+  <button class="vistab" data-vista="tickets">Alto riesgo</button>
+</nav>
+
+<div class="dlbar">
+  <span>⬇ Descargar:</span>
+  <button class="dlbtn" onclick="dlJSON()">Todo (JSON)</button>
+  <button class="dlbtn" onclick="dlCSV('tickets')">Alto riesgo (CSV)</button>
+  <button class="dlbtn" onclick="dlCSV('bti')">Causas BTI (CSV)</button>
+  <button class="dlbtn" onclick="dlCSV('jira')">Jira (CSV)</button>
+  <button class="dlbtn" onclick="dlCSV('clasificacion')">Clasificación (CSV)</button>
+</div>
+
+<div class="wrap">
+
+  <section id="vista-resumen">
+    <div class="sec">Indicadores clave</div>
+    <div class="kpis" id="kpis"></div>
+    <div class="sec">Análisis</div>
+    <div class="grid2">
+      <div class="card"><h3>Clasificación de tickets</h3><div class="ch"><canvas id="chartClasif"></canvas></div></div>
+      <div class="card"><h3>Distribución del riesgo / frustración</h3><div class="ch"><canvas id="chartRiesgo"></canvas></div></div>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>Distribución del sentimiento</h3><div class="ch"><canvas id="chartSent"></canvas></div></div>
+      <div class="card"><h3>Principales impulsores del riesgo</h3><div class="ch"><canvas id="chartImp"></canvas></div></div>
+    </div>
+    <div class="card"><h3>Tendencia mensual de tickets</h3><div class="ch"><canvas id="chartTendencia"></canvas></div></div>
+  </section>
+
+  <section id="vista-bti" class="hide">
+    <div class="sec">Categorización de problemas (Causas BTI)</div>
+    <div class="grid2">
+      <div class="card"><h3>Top causas BTI</h3><div class="ch"><canvas id="chartBti"></canvas></div></div>
+      <div class="card" style="padding:0;overflow:hidden"><table><thead><tr><th>Código</th><th>Descripción</th><th>Casos</th></tr></thead><tbody id="tablaBti"></tbody></table></div>
+    </div>
+  </section>
+
+  <section id="vista-jira" class="hide">
+    <div class="sec">Jira — issues</div>
+    <div class="kpis" id="kpisJira"></div>
+    <div class="grid2">
+      <div class="card"><h3>Issues por estado</h3><div class="ch"><canvas id="chartJira"></canvas></div></div>
+      <div class="card" style="padding:0;overflow:hidden"><table><thead><tr><th>ID</th><th>Resumen</th><th>Estado</th></tr></thead><tbody id="tablaJira"></tbody></table></div>
+    </div>
+  </section>
+
+  <section id="vista-operacional" class="hide">
+    <div class="sec">Operacional — órdenes</div>
+    <div class="kpis" id="kpisOp"></div>
+    <div id="opVacio"></div>
+  </section>
+
+  <section id="vista-tickets" class="hide">
+    <div class="sec">Tickets de alto riesgo — alerta al account manager</div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <table><thead><tr><th>Ticket</th><th>Cliente</th><th>Clasificación</th><th>Frustración</th><th>Riesgo</th><th>Recomendación</th></tr></thead>
+      <tbody id="tabla"></tbody></table>
+    </div>
+  </section>
+
+</div>
+
+<footer>MVP académico — Especialización en IA (CUN). Datos anonimizados. Índice de riesgo demostrativo.</footer>
+
+<script>
+const SAMPLE = {
+  "generado":"muestra embebida",
+  "kpis":{"total_tickets":200,"phishing_aislados":11,"procesados":189,"pct_alto_riesgo":22.8,"frustracion_promedio":58.4,"sentimiento_promedio":-0.168},
+  "clasificacion":{"BTI-440":42,"BTI-548":31,"BTI-597":22,"Pendiente":18,"BTI-536":12,"Otros":64},
+  "distribucion_riesgo":{"bajo":86,"medio":60,"alto":43},
+  "sentimiento_hist":{"bins":["muy negativo","negativo","neutro","positivo","muy positivo"],"conteo":[22,51,63,35,18]},
+  "impulsores":[{"variable":"BTI-440","importancia":0.34},{"variable":"BTI-548","importancia":0.26},{"variable":"BTI-597","importancia":0.17}],
+  "bti_tabla":[{"codigo":"BTI-440","descripcion":"Órdenes no llegan al driver","casos":42},{"codigo":"BTI-548","descripcion":"Niveles geográficos — medidas no disponibles","casos":31},{"codigo":"BTI-597","descripcion":"Ship From Store — falla notificación","casos":22}],
+  "jira":{"total":1240,"por_estado":{"Abierto":420,"En progreso":310,"Resuelto":510},"recientes":[{"id":"ID_a1","resumen":"Falla notificación reasignación de tienda","estado":"Abierto"},{"id":"ID_b2","resumen":"Cancelación de órdenes sin stock","estado":"En progreso"}]},
+  "operacional":{"ingresadas_total":3580,"ordenes_total":920},
+  "serie_mensual":{"2026-01":120,"2026-02":150,"2026-03":98,"2026-04":210,"2026-05":175,"2026-06":140},
+  "tickets_alto_riesgo":[{"id":"ID_a1b2","cliente":"ID_a1b2","clasificacion":"BTI-440","frustracion":91,"riesgo":91,"recomendacion":"Contacto inmediato y plan de retención"},{"id":"ID_d4e5","cliente":"ID_d4e5","clasificacion":"BTI-548","frustracion":84,"riesgo":84,"recomendacion":"Seguimiento proactivo"}]
+};
+
+const C = {blue:'#1F4E79', blue2:'#2E75B6'};
+const PALETA = ['#1F4E79','#2E75B6','#5B9BD5','#9DC3E6','#C55A11','#ED7D31','#375623','#70AD47'];
+Chart.defaults.font.size = 11; Chart.defaults.color = '#555';
+function kpi(l,v,cls,vcls){return `<div class="kpi ${cls||''}"><div class="kl">${l}</div><div class="kv ${vcls||''}">${v}</div></div>`;}
+function nuevoChart(id,cfg){const el=document.getElementById(id); if(el) new Chart(el,cfg);}
+
+// ---- Descargas desde el tablero ----
+let DATA = null;
+function descargar(nombre, contenido, tipo){
+  const blob = new Blob([contenido], {type:tipo});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = nombre; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
+}
+function dlJSON(){ if(DATA) descargar('resultados.json', JSON.stringify(DATA,null,2), 'application/json'); }
+function toCSV(rows){
+  if(!rows || !rows.length) return '';
+  const cols = Object.keys(rows[0]);
+  const esc = v => '"' + String(v==null?'':v).replace(/"/g,'""') + '"';
+  return cols.join(',') + '\n' + rows.map(r=>cols.map(c=>esc(r[c])).join(',')).join('\n');
+}
+function dlCSV(tipo){
+  if(!DATA){ return; }
+  let rows = [], nombre = '';
+  if(tipo==='tickets'){ rows = DATA.tickets_alto_riesgo || []; nombre = 'tickets_alto_riesgo.csv'; }
+  else if(tipo==='bti'){ rows = DATA.bti_tabla || []; nombre = 'causas_bti.csv'; }
+  else if(tipo==='jira'){ rows = (DATA.jira && DATA.jira.recientes) || []; nombre = 'jira_recientes.csv'; }
+  else if(tipo==='clasificacion'){ rows = Object.entries(DATA.clasificacion||{}).map(([k,v])=>({categoria:k, casos:v})); nombre = 'clasificacion.csv'; }
+  if(!rows.length){ alert('No hay datos para descargar en esa sección.'); return; }
+  descargar(nombre, toCSV(rows), 'text/csv;charset=utf-8');
+}
+
+function render(d){
+  DATA = d;
+  document.getElementById('generado').textContent = 'Actualizado: ' + (d.generado || '—');
+  const k = d.kpis || {};
+  document.getElementById('kpis').innerHTML = [
+    kpi('Tickets totales', k.total_tickets ?? '—'),
+    kpi('Phishing aislados', k.phishing_aislados ?? '—','warn','red'),
+    kpi('Procesados', k.procesados ?? '—','ok','green'),
+    kpi('% alto riesgo', (k.pct_alto_riesgo ?? '—')+'%','warn','red'),
+    kpi('Frustración prom.', k.frustracion_promedio ?? '—','warn'),
+    kpi('Sentimiento prom.', k.sentimiento_promedio ?? '—', (k.sentimiento_promedio<0?'warn':'ok'), (k.sentimiento_promedio<0?'red':'green'))
+  ].join('');
+
+  const cl = d.clasificacion || {};
+  nuevoChart('chartClasif',{type:'doughnut',data:{labels:Object.keys(cl),datasets:[{data:Object.values(cl),backgroundColor:PALETA}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right'}}}});
+  const r = d.distribucion_riesgo || {bajo:0,medio:0,alto:0};
+  nuevoChart('chartRiesgo',{type:'bar',data:{labels:['bajo','medio','alto'],datasets:[{data:[r.bajo,r.medio,r.alto],backgroundColor:['#375623','#C55A11','#C0392B']}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+  const s = d.sentimiento_hist || {bins:[],conteo:[]};
+  nuevoChart('chartSent',{type:'bar',data:{labels:s.bins,datasets:[{data:s.conteo,backgroundColor:C.blue2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+  const imp = d.impulsores || [];
+  nuevoChart('chartImp',{type:'bar',data:{labels:imp.map(i=>i.variable),datasets:[{data:imp.map(i=>i.importancia),backgroundColor:C.blue}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true}}}});
+
+  const sm = d.serie_mensual || {};
+  const meses = Object.keys(sm).sort();
+  nuevoChart('chartTendencia',{type:'line',data:{labels:meses,datasets:[{data:meses.map(m=>sm[m]),borderColor:C.blue,backgroundColor:'rgba(31,78,121,.12)',fill:true,tension:.3,pointRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+
+  // BTI
+  const bti = d.bti_tabla || [];
+  nuevoChart('chartBti',{type:'bar',data:{labels:bti.map(b=>b.codigo),datasets:[{data:bti.map(b=>b.casos),backgroundColor:C.blue2}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true}}}});
+  document.getElementById('tablaBti').innerHTML = bti.length ? bti.map(b=>`<tr><td><span class="badge">${b.codigo}</span></td><td>${b.descripcion||'—'}</td><td>${b.casos}</td></tr>`).join('') : '<tr><td colspan="3" class="empty">Sin datos BTI</td></tr>';
+
+  // Jira
+  const j = d.jira || {};
+  document.getElementById('kpisJira').innerHTML = [
+    kpi('Issues totales', j.total ?? '—'),
+    kpi('Estados', j.por_estado ? Object.keys(j.por_estado).length : '—','gris')
+  ].join('');
+  const pe = j.por_estado || {};
+  nuevoChart('chartJira',{type:'bar',data:{labels:Object.keys(pe),datasets:[{data:Object.values(pe),backgroundColor:PALETA}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+  const rec = j.recientes || [];
+  document.getElementById('tablaJira').innerHTML = rec.length ? rec.map(t=>`<tr><td><strong>${t.id}</strong></td><td>${t.resumen||''}</td><td><span class="badge">${t.estado||'—'}</span></td></tr>`).join('') : '<tr><td colspan="3" class="empty">Sin issues de Jira</td></tr>';
+
+  // Operacional
+  const op = d.operacional || {};
+  const opCards = [];
+  if(op.ingresadas_total!=null) opCards.push(kpi('ORs ingresadas', op.ingresadas_total));
+  if(op.ordenes_total!=null) opCards.push(kpi('Órdenes diarias', op.ordenes_total,'ok','green'));
+  document.getElementById('kpisOp').innerHTML = opCards.join('');
+  document.getElementById('opVacio').innerHTML = opCards.length ? '' : '<div class="empty">Sin datos operacionales</div>';
+
+  // Alto riesgo
+  const tk = d.tickets_alto_riesgo || [];
+  document.getElementById('tabla').innerHTML = tk.length ? tk.map(t=>`<tr><td><strong>${t.id}</strong></td><td>${t.cliente}</td><td><span class="badge">${t.clasificacion||'—'}</span></td><td>${t.frustracion}</td><td><div class="bar-wrap"><span>${t.riesgo}</span><div class="barh" style="width:${Math.min(t.riesgo,100)}px"></div></div></td><td>${t.recomendacion||''}</td></tr>`).join('') : '<tr><td colspan="6" class="empty">Sin tickets de alto riesgo</td></tr>';
+}
+
+document.querySelectorAll('.vistab').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.vistab').forEach(x=>x.classList.remove('on')); b.classList.add('on');
+    ['resumen','bti','jira','operacional','tickets'].forEach(v=>{
+      document.getElementById('vista-'+v).classList.toggle('hide', b.dataset.vista!==v);
+    });
+  });
+});
+
+fetch('data/resultados.json').then(r=>{if(!r.ok)throw 0;return r.json();}).then(render).catch(()=>render(SAMPLE));
+</script>
+</body>
+</html>
