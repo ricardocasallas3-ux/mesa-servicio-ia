@@ -1,5 +1,5 @@
 {
-  "generado": "2026-06-27 23:00 (IX + Intcomex, anonimizado)",
+  "generado": "2026-06-27 23:07 (IX + Intcomex, anonimizado)",
   "empresas": [
     "Todo",
     "IX Comercio",
@@ -9,7 +9,7 @@
     "Todo": {
       "kpis": {
         "total_tickets": 21526,
-        "abiertos": 5279,
+        "abiertos": 5280,
         "pct_alto_riesgo": 6.2,
         "frustracion_promedio": 65.1,
         "sentimiento_promedio": -0.302,
@@ -22,9 +22,9 @@
         "Crítica": 317
       },
       "distribucion_riesgo": {
-        "bajo": 16247,
+        "bajo": 16246,
         "medio": 3951,
-        "alto": 1328
+        "alto": 1329
       },
       "sentimiento_hist": {
         "bins": [
@@ -1409,15 +1409,15 @@
           "resumen": "CLONE - Error al cerrar Orden de traslado Netsuite"
         },
         {
-          "id": "CI-130",
-          "empresa": "IX Comercio",
+          "id": "ITSD-69305",
+          "empresa": "Intcomex",
           "prioridad": "Alta",
-          "estado": "Finalizada",
+          "estado": "Derivar a iniciati",
           "dias": 137,
           "frustracion": 50.0,
           "incumplimiento": 86.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Solicitud de activacion servicio Express en MX"
+          "resumen": "Modify Report"
         },
         {
           "id": "ITHD-94128",
@@ -1431,15 +1431,15 @@
           "resumen": "CLONE - No llega la guía de la orden 35796-CLIENTE_02_COL de la tienda Zona T CL"
         },
         {
-          "id": "ITSD-69305",
-          "empresa": "Intcomex",
+          "id": "CI-130",
+          "empresa": "IX Comercio",
           "prioridad": "Alta",
-          "estado": "Derivar a iniciati",
-          "dias": 136,
+          "estado": "Finalizada",
+          "dias": 137,
           "frustracion": 50.0,
-          "incumplimiento": 85.9,
+          "incumplimiento": 86.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Modify Report"
+          "resumen": "Solicitud de activacion servicio Express en MX"
         },
         {
           "id": "ITHD-94144",
@@ -2469,9 +2469,9 @@
           "empresa": "IX Comercio",
           "prioridad": "Alta",
           "estado": "Nuevo",
-          "dias": 64,
+          "dias": 65,
           "frustracion": 50.0,
-          "incumplimiento": 77.5,
+          "incumplimiento": 77.6,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Revisión de lectura de stock de preventa hacia Yuju y MKP (casos peru)"
         },
@@ -6598,6 +6598,17 @@
           "resumen": "CLONE - Novedad SKUS categoría Ofertas EPSON MX"
         },
         {
+          "id": "ITHD-93882",
+          "empresa": "IX Comercio",
+          "prioridad": "Alta",
+          "estado": "Nuevo",
+          "dias": 65,
+          "frustracion": 50.0,
+          "incumplimiento": 77.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Revisión de lectura de stock de preventa hacia Yuju y MKP (casos peru)"
+        },
+        {
           "id": "ITHD-93889",
           "empresa": "IX Comercio",
           "prioridad": "Alta",
@@ -6607,17 +6618,6 @@
           "incumplimiento": 77.5,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Solicitud de acceso a Grafana"
-        },
-        {
-          "id": "ITHD-93882",
-          "empresa": "IX Comercio",
-          "prioridad": "Alta",
-          "estado": "Nuevo",
-          "dias": 64,
-          "frustracion": 50.0,
-          "incumplimiento": 77.5,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Revisión de lectura de stock de preventa hacia Yuju y MKP (casos peru)"
         },
         {
           "id": "ITHD-93964",
@@ -8350,7 +8350,7 @@
     "Intcomex": {
       "kpis": {
         "total_tickets": 16674,
-        "abiertos": 2100,
+        "abiertos": 2101,
         "pct_alto_riesgo": 1.2,
         "frustracion_promedio": 63.4,
         "sentimiento_promedio": -0.268,
@@ -8363,9 +8363,9 @@
         "Crítica": 40
       },
       "distribucion_riesgo": {
-        "bajo": 14574,
+        "bajo": 14573,
         "medio": 1901,
-        "alto": 199
+        "alto": 200
       },
       "sentimiento_hist": {
         "bins": [
@@ -8434,9 +8434,9 @@
           "empresa": "Intcomex",
           "prioridad": "Alta",
           "estado": "Derivar a iniciati",
-          "dias": 136,
+          "dias": 137,
           "frustracion": 50.0,
-          "incumplimiento": 85.9,
+          "incumplimiento": 86.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Modify Report"
         },
@@ -8577,9 +8577,9 @@
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Nuevo",
-          "dias": 121,
+          "dias": 122,
           "frustracion": 100.0,
-          "incumplimiento": 69.2,
+          "incumplimiento": 69.3,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "SKU no refleja en trax"
         },
@@ -8650,29 +8650,51 @@
           "resumen": "No puedo conectarme via \"Conexion a Escritorio Remoto\" al equipo \"xec-pmart-D\""
         },
         {
-          "id": "ITSD-65976",
+          "id": "ITSD-65600",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 176,
+          "frustracion": 100.0,
+          "incumplimiento": 65.0,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "No funciona el descuento web del 1.5%"
+        },
+        {
+          "id": "ITSD-65807",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
-          "dias": 171,
+          "dias": 172,
           "frustracion": 50.0,
           "incumplimiento": 65.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Asignación de contraseña de correo Vladimir De La Hoz"
+          "resumen": "Configuración e implementación de licencia BI usuario Eddie Gorfinkel"
         },
         {
-          "id": "ITSD-65946",
+          "id": "ITSD-65905",
           "empresa": "Intcomex",
-          "prioridad": "Baja",
+          "prioridad": "Media",
           "estado": "Derivar a iniciati",
-          "dias": 171,
+          "dias": 172,
           "frustracion": 50.0,
           "incumplimiento": 65.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Cambio de Division PC002XMX11"
+          "resumen": "Suspender la recepción de órdenes de compra del webstore, a partir de las 18:00 "
         },
         {
-          "id": "ITSD-65922",
+          "id": "ITSD-65746",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 173,
+          "frustracion": 50.0,
+          "incumplimiento": 65.0,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configurar Vpn al usuario Mikael Benarroch recién se asignó el permiso"
+        },
+        {
+          "id": "ITSD-65953",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -8680,7 +8702,7 @@
           "frustracion": 50.0,
           "incumplimiento": 65.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario jrubi671 Jose Rubio"
+          "resumen": "Configuración y acceso de VPN usuario Jeferson Torres"
         },
         {
           "id": "ITSD-65745",
@@ -8716,7 +8738,7 @@
           "resumen": "Error en sincronización de stock para unos Skus  CLIENTE_01 CO"
         },
         {
-          "id": "ITSD-65953",
+          "id": "ITSD-65976",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -8724,21 +8746,10 @@
           "frustracion": 50.0,
           "incumplimiento": 65.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración y acceso de VPN usuario Jeferson Torres"
+          "resumen": "Asignación de contraseña de correo Vladimir De La Hoz"
         },
         {
-          "id": "ITSD-65905",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Derivar a iniciati",
-          "dias": 172,
-          "frustracion": 50.0,
-          "incumplimiento": 65.0,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Suspender la recepción de órdenes de compra del webstore, a partir de las 18:00 "
-        },
-        {
-          "id": "ITSD-65923",
+          "id": "ITSD-65922",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -8746,18 +8757,7 @@
           "frustracion": 50.0,
           "incumplimiento": 65.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario VANESSA RESTREPO"
-        },
-        {
-          "id": "ITSD-65977",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Nuevo",
-          "dias": 171,
-          "frustracion": 50.0,
-          "incumplimiento": 65.0,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Asignación de contraseña de correo Maria Baidal - Miriam Montalban"
+          "resumen": "Configuración e implementación de licencia BI usuario jrubi671 Jose Rubio"
         },
         {
           "id": "ITSD-65899",
@@ -8771,6 +8771,28 @@
           "resumen": "Configuración y acceso a buzón de Pía Bazzolo usuaria Maria Montejo"
         },
         {
+          "id": "ITSD-65977",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Nuevo",
+          "dias": 171,
+          "frustracion": 50.0,
+          "incumplimiento": 65.0,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Asignación de contraseña de correo Maria Baidal - Miriam Montalban"
+        },
+        {
+          "id": "ITSD-65923",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 171,
+          "frustracion": 50.0,
+          "incumplimiento": 65.0,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración e implementación de licencia BI usuario VANESSA RESTREPO"
+        },
+        {
           "id": "ITSD-65723",
           "empresa": "Intcomex",
           "prioridad": "Alta",
@@ -8780,28 +8802,6 @@
           "incumplimiento": 65.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Error al generar tokens"
-        },
-        {
-          "id": "ITSD-65980",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 171,
-          "frustracion": 50.0,
-          "incumplimiento": 65.0,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Asignación de contraseña de correo Isaac Mora"
-        },
-        {
-          "id": "ITSD-65746",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 173,
-          "frustracion": 50.0,
-          "incumplimiento": 65.0,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configurar Vpn al usuario Mikael Benarroch recién se asignó el permiso"
         },
         {
           "id": "ITSD-65804",
@@ -8815,59 +8815,26 @@
           "resumen": "Validar licencia de Copilot"
         },
         {
-          "id": "ITSD-65600",
+          "id": "ITSD-65946",
           "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 176,
-          "frustracion": 100.0,
-          "incumplimiento": 65.0,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "No funciona el descuento web del 1.5%"
-        },
-        {
-          "id": "ITSD-65807",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 172,
+          "prioridad": "Baja",
+          "estado": "Derivar a iniciati",
+          "dias": 171,
           "frustracion": 50.0,
           "incumplimiento": 65.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario Eddie Gorfinkel"
+          "resumen": "Cambio de Division PC002XMX11"
         },
         {
-          "id": "ITSD-66058",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Categorizado",
-          "dias": 170,
-          "frustracion": 50.0,
-          "incumplimiento": 64.9,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Cookie too long"
-        },
-        {
-          "id": "ITSD-66084",
+          "id": "ITSD-65980",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
-          "dias": 170,
+          "dias": 171,
           "frustracion": 50.0,
-          "incumplimiento": 64.9,
+          "incumplimiento": 65.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario Carlos Mateo Lindarte"
-        },
-        {
-          "id": "ITSD-66062",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Nuevo",
-          "dias": 170,
-          "frustracion": 50.0,
-          "incumplimiento": 64.9,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Crear el flujo de inactivación"
+          "resumen": "Asignación de contraseña de correo Isaac Mora"
         },
         {
           "id": "ITSD-66153",
@@ -8881,6 +8848,17 @@
           "resumen": "Configuración y acceso a buzones [EMAIL] y [EMAIL] al usuario  Maria Jose Montej"
         },
         {
+          "id": "ITSD-66064",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Nuevo",
+          "dias": 170,
+          "frustracion": 50.0,
+          "incumplimiento": 64.9,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Pruebas QA Usuarios inactivos en CRM aun activos en AD"
+        },
+        {
           "id": "ITSD-66075",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -8892,29 +8870,7 @@
           "resumen": "Prueba"
         },
         {
-          "id": "ITSD-66067",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Nuevo",
-          "dias": 170,
-          "frustracion": 50.0,
-          "incumplimiento": 64.9,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Ajustes UAT Usuarios inactivos en CRM aun activos en AD"
-        },
-        {
-          "id": "ITSD-66066",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Nuevo",
-          "dias": 170,
-          "frustracion": 50.0,
-          "incumplimiento": 64.9,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Pruebas UAT Usuarios inactivos en CRM aun activos en AD"
-        },
-        {
-          "id": "ITSD-66100",
+          "id": "ITSD-66084",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -8922,18 +8878,7 @@
           "frustracion": 50.0,
           "incumplimiento": 64.9,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "validar el acceso al buzón solicitado"
-        },
-        {
-          "id": "ITSD-66063",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Nuevo",
-          "dias": 170,
-          "frustracion": 50.0,
-          "incumplimiento": 64.9,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Documentación Usuarios inactivos en CRM aun activos en AD"
+          "resumen": "Configuración e implementación de licencia BI usuario Carlos Mateo Lindarte"
         },
         {
           "id": "ITSD-66068",
@@ -8947,6 +8892,50 @@
           "resumen": "Actas de despliegue Usuarios inactivos en CRM aun activos en AD"
         },
         {
+          "id": "ITSD-66058",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Categorizado",
+          "dias": 170,
+          "frustracion": 50.0,
+          "incumplimiento": 64.9,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Cookie too long"
+        },
+        {
+          "id": "ITSD-66066",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Nuevo",
+          "dias": 170,
+          "frustracion": 50.0,
+          "incumplimiento": 64.9,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Pruebas UAT Usuarios inactivos en CRM aun activos en AD"
+        },
+        {
+          "id": "ITSD-66063",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Nuevo",
+          "dias": 170,
+          "frustracion": 50.0,
+          "incumplimiento": 64.9,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Documentación Usuarios inactivos en CRM aun activos en AD"
+        },
+        {
+          "id": "ITSD-66062",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Nuevo",
+          "dias": 170,
+          "frustracion": 50.0,
+          "incumplimiento": 64.9,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Crear el flujo de inactivación"
+        },
+        {
           "id": "ITSD-66069",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -8958,7 +8947,7 @@
           "resumen": "Despliegue Usuarios inactivos en CRM aun activos en AD"
         },
         {
-          "id": "ITSD-66064",
+          "id": "ITSD-66067",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Nuevo",
@@ -8966,7 +8955,29 @@
           "frustracion": 50.0,
           "incumplimiento": 64.9,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Pruebas QA Usuarios inactivos en CRM aun activos en AD"
+          "resumen": "Ajustes UAT Usuarios inactivos en CRM aun activos en AD"
+        },
+        {
+          "id": "ITSD-66100",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 170,
+          "frustracion": 50.0,
+          "incumplimiento": 64.9,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "validar el acceso al buzón solicitado"
+        },
+        {
+          "id": "ITSD-66205",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Derivar a iniciati",
+          "dias": 169,
+          "frustracion": 50.0,
+          "incumplimiento": 64.8,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Logica de configuracion/identificacion de productos tipo \"celular\""
         },
         {
           "id": "ITSD-66248",
@@ -8991,17 +9002,6 @@
           "resumen": "Configurar Vpn al usuario Rodrigo Vallarino recién se asignó el permiso"
         },
         {
-          "id": "ITSD-66205",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Derivar a iniciati",
-          "dias": 169,
-          "frustracion": 50.0,
-          "incumplimiento": 64.8,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Logica de configuracion/identificacion de productos tipo \"celular\""
-        },
-        {
           "id": "ITSD-66346",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9011,6 +9011,17 @@
           "incumplimiento": 64.4,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Quitar permiso en el extranjero el 29 de enero de 2026 usuaria llava567"
+        },
+        {
+          "id": "ITSD-66345",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 166,
+          "frustracion": 50.0,
+          "incumplimiento": 64.4,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Asignar permiso en el extranjero el 14 de Enero de 2026 usuaria llava567"
         },
         {
           "id": "ITSD-66313",
@@ -9035,28 +9046,6 @@
           "resumen": "NO MIGRAN PICKS DE SCALE A TRAX"
         },
         {
-          "id": "ITSD-66345",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 166,
-          "frustracion": 50.0,
-          "incumplimiento": 64.4,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Asignar permiso en el extranjero el 14 de Enero de 2026 usuaria llava567"
-        },
-        {
-          "id": "ITSD-66474",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 165,
-          "frustracion": 50.0,
-          "incumplimiento": 64.3,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Creación de acceso a Pentclound Luisa Barrientos"
-        },
-        {
           "id": "ITSD-66473",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9066,28 +9055,6 @@
           "incumplimiento": 64.3,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Crear acceso a POS Virtual Kimberly Arévalo"
-        },
-        {
-          "id": "ITSD-66476",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 165,
-          "frustracion": 50.0,
-          "incumplimiento": 64.3,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Creación de acceso a Pentclound Erik Ovalle"
-        },
-        {
-          "id": "ITSD-66470",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 165,
-          "frustracion": 50.0,
-          "incumplimiento": 64.3,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Creación de acceso a Pentcloud Kimberly Arévalo"
         },
         {
           "id": "ITSD-66496",
@@ -9112,6 +9079,17 @@
           "resumen": "Crear acceso a POS Virtual Luisa Barrientos"
         },
         {
+          "id": "ITSD-66476",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 165,
+          "frustracion": 50.0,
+          "incumplimiento": 64.3,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Creación de acceso a Pentclound Erik Ovalle"
+        },
+        {
           "id": "ITSD-66472",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9123,37 +9101,26 @@
           "resumen": "Crear acceso a POS Virtual Erik Ovalle"
         },
         {
-          "id": "ITSD-66549",
+          "id": "ITSD-66470",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
-          "dias": 164,
+          "dias": 165,
           "frustracion": 50.0,
-          "incumplimiento": 64.2,
+          "incumplimiento": 64.3,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración y acceso a la VPN del usuario xclmcerd"
+          "resumen": "Creación de acceso a Pentcloud Kimberly Arévalo"
         },
         {
-          "id": "ITSD-66557",
+          "id": "ITSD-66474",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
-          "dias": 164,
+          "dias": 165,
           "frustracion": 50.0,
-          "incumplimiento": 64.2,
+          "incumplimiento": 64.3,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configurar Vpn al usuario Hernan Freire recién se asignó el permiso."
-        },
-        {
-          "id": "ITSD-66600",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 164,
-          "frustracion": 50.0,
-          "incumplimiento": 64.2,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración y acceso a buzón compartido [EMAIL] usuarios: Yusmaira Perdomo, Os"
+          "resumen": "Creación de acceso a Pentclound Luisa Barrientos"
         },
         {
           "id": "ITSD-66572",
@@ -9167,6 +9134,39 @@
           "resumen": "Actualizacion licencia de teams Premium a usuaria Anggy Rojas recien asignada"
         },
         {
+          "id": "ITSD-66600",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 164,
+          "frustracion": 50.0,
+          "incumplimiento": 64.2,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración y acceso a buzón compartido [EMAIL] usuarios: Yusmaira Perdomo, Os"
+        },
+        {
+          "id": "ITSD-66557",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 164,
+          "frustracion": 50.0,
+          "incumplimiento": 64.2,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configurar Vpn al usuario Hernan Freire recién se asignó el permiso."
+        },
+        {
+          "id": "ITSD-66549",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 164,
+          "frustracion": 50.0,
+          "incumplimiento": 64.2,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración y acceso a la VPN del usuario xclmcerd"
+        },
+        {
           "id": "ITSD-66697",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9178,15 +9178,15 @@
           "resumen": "Configuración y acceso a la VPN del usuario xusgdani"
         },
         {
-          "id": "ITSD-66645",
+          "id": "ITSD-75291",
           "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 163,
-          "frustracion": 50.0,
+          "prioridad": "Baja",
+          "estado": "Recategorización",
+          "dias": 78,
+          "frustracion": 100.0,
           "incumplimiento": 64.1,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración y acceso a buzón de Paola Barboza al usuario Dayanna Noguera"
+          "resumen": "Los MPN de muchos caracteres están saliendo incompletos en el PDF de la orden de"
         },
         {
           "id": "ITSD-66649",
@@ -9211,6 +9211,17 @@
           "resumen": "Configuración e implementación de licencia BI usuario Esteban Gonzalez"
         },
         {
+          "id": "ITSD-66645",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 163,
+          "frustracion": 50.0,
+          "incumplimiento": 64.1,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración y acceso a buzón de Paola Barboza al usuario Dayanna Noguera"
+        },
+        {
           "id": "ITSD-75288",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9220,17 +9231,6 @@
           "incumplimiento": 64.1,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "XPAER04202 no ha sido importado desde 8 abril"
-        },
-        {
-          "id": "ITSD-75291",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "Recategorización",
-          "dias": 78,
-          "frustracion": 100.0,
-          "incumplimiento": 64.1,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Los MPN de muchos caracteres están saliendo incompletos en el PDF de la orden de"
         },
         {
           "id": "ITSD-66775",
@@ -9277,28 +9277,6 @@
           "resumen": "Configuración e implementación de licencia BI usuario Abraham Shalom"
         },
         {
-          "id": "ITSD-67180",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 157,
-          "frustracion": 50.0,
-          "incumplimiento": 63.4,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configurar y validar acceso a proyecto de power bi a Brayan Soto y Cielo Andrea "
-        },
-        {
-          "id": "ITSD-67197",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "Pendiente de prove",
-          "dias": 157,
-          "frustracion": 50.0,
-          "incumplimiento": 63.4,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "La computadora de la tienda Jockey Plaza HOFF presenta lentitud en su procesamie"
-        },
-        {
           "id": "ITSD-67168",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9321,6 +9299,28 @@
           "resumen": "ERROR EN EL CHAT"
         },
         {
+          "id": "ITSD-67197",
+          "empresa": "Intcomex",
+          "prioridad": "Baja",
+          "estado": "Pendiente de prove",
+          "dias": 157,
+          "frustracion": 50.0,
+          "incumplimiento": 63.4,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "La computadora de la tienda Jockey Plaza HOFF presenta lentitud en su procesamie"
+        },
+        {
+          "id": "ITSD-67180",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 157,
+          "frustracion": 50.0,
+          "incumplimiento": 63.4,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configurar y validar acceso a proyecto de power bi a Brayan Soto y Cielo Andrea "
+        },
+        {
           "id": "ITSD-67386",
           "empresa": "Intcomex",
           "prioridad": "Alta",
@@ -9330,28 +9330,6 @@
           "incumplimiento": 63.2,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "No estan entrando  correos al dominio Accvent.com"
-        },
-        {
-          "id": "ITSD-67353",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 156,
-          "frustracion": 100.0,
-          "incumplimiento": 63.2,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "No ingresan correos externos"
-        },
-        {
-          "id": "ITSD-67326",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 156,
-          "frustracion": 50.0,
-          "incumplimiento": 63.2,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario rescu684"
         },
         {
           "id": "ITSD-67357",
@@ -9365,6 +9343,28 @@
           "resumen": "No recibo correos externos"
         },
         {
+          "id": "ITSD-67326",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 156,
+          "frustracion": 50.0,
+          "incumplimiento": 63.2,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración e implementación de licencia BI usuario rescu684"
+        },
+        {
+          "id": "ITSD-67353",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 156,
+          "frustracion": 100.0,
+          "incumplimiento": 63.2,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "No ingresan correos externos"
+        },
+        {
           "id": "ITSD-67343",
           "empresa": "Intcomex",
           "prioridad": "Baja",
@@ -9376,7 +9376,7 @@
           "resumen": "Solicitud ajuste portal Customer Intelligence Report"
         },
         {
-          "id": "ITSD-67525",
+          "id": "ITSD-67547",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Nuevo",
@@ -9384,7 +9384,18 @@
           "frustracion": 50.0,
           "incumplimiento": 63.1,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Instalación y configuración de Pinpad"
+          "resumen": "Configuración e implementación de licencia BI usuario Omar Montalvo"
+        },
+        {
+          "id": "ITSD-67501",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 155,
+          "frustracion": 100.0,
+          "incumplimiento": 63.1,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Error en pick [NUM] sku AS008CAN65"
         },
         {
           "id": "ITSD-67440",
@@ -9409,15 +9420,15 @@
           "resumen": "Modificacion de plantilla"
         },
         {
-          "id": "ITSD-67409",
+          "id": "ITSD-67525",
           "empresa": "Intcomex",
           "prioridad": "Media",
-          "estado": "Terminado",
+          "estado": "Nuevo",
           "dias": 155,
           "frustracion": 50.0,
           "incumplimiento": 63.1,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración y acceso de VPN usuario Franco Moncayo"
+          "resumen": "Instalación y configuración de Pinpad"
         },
         {
           "id": "ITSD-67441",
@@ -9431,26 +9442,15 @@
           "resumen": "SOLICITUD TECLADO Y MOUSE"
         },
         {
-          "id": "ITSD-67501",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 155,
-          "frustracion": 100.0,
-          "incumplimiento": 63.1,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Error en pick [NUM] sku AS008CAN65"
-        },
-        {
-          "id": "ITSD-67547",
+          "id": "ITSD-67409",
           "empresa": "Intcomex",
           "prioridad": "Media",
-          "estado": "Nuevo",
-          "dias": 154,
+          "estado": "Terminado",
+          "dias": 155,
           "frustracion": 50.0,
-          "incumplimiento": 63.0,
+          "incumplimiento": 63.1,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario Omar Montalvo"
+          "resumen": "Configuración y acceso de VPN usuario Franco Moncayo"
         },
         {
           "id": "ITSD-67549",
@@ -9486,28 +9486,6 @@
           "resumen": "Asignar permiso de conexión en el extranjero 26 de febrero de 2026 usuario Filib"
         },
         {
-          "id": "ITSD-67562",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 152,
-          "frustracion": 100.0,
-          "incumplimiento": 62.8,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "problema de conexión"
-        },
-        {
-          "id": "ITSD-67610",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 152,
-          "frustracion": 100.0,
-          "incumplimiento": 62.8,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "El sistema no deja correr las ordenes"
-        },
-        {
           "id": "ITSD-67561",
           "empresa": "Intcomex",
           "prioridad": "Alta",
@@ -9517,6 +9495,17 @@
           "incumplimiento": 62.8,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "RF sin Intenert"
+        },
+        {
+          "id": "ITSD-67562",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 152,
+          "frustracion": 100.0,
+          "incumplimiento": 62.8,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "problema de conexión"
         },
         {
           "id": "ITSD-67627",
@@ -9530,15 +9519,15 @@
           "resumen": "Configuración e implementación de licencia BI usuario Dinael Duran - Franco Monc"
         },
         {
-          "id": "ITSD-67810",
+          "id": "ITSD-67610",
           "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 151,
-          "frustracion": 50.0,
-          "incumplimiento": 62.7,
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 152,
+          "frustracion": 100.0,
+          "incumplimiento": 62.8,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración de buzón compartido [EMAIL] a los usuarios Richard Frazao,Javier S"
+          "resumen": "El sistema no deja correr las ordenes"
         },
         {
           "id": "ITSD-67847",
@@ -9550,6 +9539,17 @@
           "incumplimiento": 62.7,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Emisión automática de Guías de despacho dese trax al portal de paperless"
+        },
+        {
+          "id": "ITSD-67810",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 151,
+          "frustracion": 50.0,
+          "incumplimiento": 62.7,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración de buzón compartido [EMAIL] a los usuarios Richard Frazao,Javier S"
         },
         {
           "id": "ITSD-67719",
@@ -9585,7 +9585,7 @@
           "resumen": "problema con video portero"
         },
         {
-          "id": "ITSD-68098",
+          "id": "ITSD-68099",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -9593,7 +9593,18 @@
           "frustracion": 50.0,
           "incumplimiento": 62.4,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Agregar permiso del extranjero al usuario brome543 el 31 de enero de 2026"
+          "resumen": "Quitar permiso del extranjero el 8 de febrero de 2026 al usuario brome543"
+        },
+        {
+          "id": "ITSD-68144",
+          "empresa": "Intcomex",
+          "prioridad": "Baja",
+          "estado": "En Nivel 1",
+          "dias": 149,
+          "frustracion": 50.0,
+          "incumplimiento": 62.4,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Solicitud tinta"
         },
         {
           "id": "ITSD-68095",
@@ -9618,6 +9629,17 @@
           "resumen": "Configuración e implementación de licencia BI usuario Makarena Riveros"
         },
         {
+          "id": "ITSD-68098",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 149,
+          "frustracion": 50.0,
+          "incumplimiento": 62.4,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Agregar permiso del extranjero al usuario brome543 el 31 de enero de 2026"
+        },
+        {
           "id": "ITSD-68091",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9629,17 +9651,6 @@
           "resumen": "asignar permisos del extranjero el 31 de enero de 2026 usuario xgtavizq"
         },
         {
-          "id": "ITSD-68144",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "En Nivel 1",
-          "dias": 149,
-          "frustracion": 50.0,
-          "incumplimiento": 62.4,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Solicitud tinta"
-        },
-        {
           "id": "ITSD-68092",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9649,6 +9660,17 @@
           "incumplimiento": 62.4,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Quitar permisos del extranjero el 08 de febrero de 2026 usuario xgtavizq"
+        },
+        {
+          "id": "ITSD-68096",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 149,
+          "frustracion": 50.0,
+          "incumplimiento": 62.4,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Quitar permiso del extranjero el 8 de febrero de 2026 al usuario xgtvmeji"
         },
         {
           "id": "ITSD-68053",
@@ -9673,26 +9695,15 @@
           "resumen": "Por favor abrir planilla SGM para poder cargar cuotas de Cloud que esta pendient"
         },
         {
-          "id": "ITSD-68099",
+          "id": "ITSD-68178",
           "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 149,
+          "prioridad": "Baja",
+          "estado": "Nuevo",
+          "dias": 148,
           "frustracion": 50.0,
-          "incumplimiento": 62.4,
+          "incumplimiento": 62.3,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Quitar permiso del extranjero el 8 de febrero de 2026 al usuario brome543"
-        },
-        {
-          "id": "ITSD-68096",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 149,
-          "frustracion": 50.0,
-          "incumplimiento": 62.4,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Quitar permiso del extranjero el 8 de febrero de 2026 al usuario xgtvmeji"
+          "resumen": "Creación Actividad relacionada en hijas para las regionales en Miami"
         },
         {
           "id": "ITSD-68253",
@@ -9704,17 +9715,6 @@
           "incumplimiento": 62.3,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Problemas de bloqueo a aplicacion"
-        },
-        {
-          "id": "ITSD-68178",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "Nuevo",
-          "dias": 148,
-          "frustracion": 50.0,
-          "incumplimiento": 62.3,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Creación Actividad relacionada en hijas para las regionales en Miami"
         },
         {
           "id": "ITSD-68284",
@@ -9739,7 +9739,7 @@
           "resumen": "Configuración y acceso del usuario  paula rodriguez al buzón compartido [EMAIL]"
         },
         {
-          "id": "ITSD-68376",
+          "id": "ITSD-68374",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -9747,29 +9747,7 @@
           "frustracion": 50.0,
           "incumplimiento": 62.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario Alejandro Eblen"
-        },
-        {
-          "id": "ITSD-68310",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 145,
-          "frustracion": 100.0,
-          "incumplimiento": 62.0,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Necesitamos abrir SGM y luego apoyo para cierre de metas ya que no logramos que "
-        },
-        {
-          "id": "ITSD-68342",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 145,
-          "frustracion": 50.0,
-          "incumplimiento": 62.0,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Cambio de licenciamiento office de escritorio E5 a los usuarios: Josselyn Vargas"
+          "resumen": "Quitar permisos de conexión al extranjero el 4 de febrero de 2026 al usuario xsv"
         },
         {
           "id": "ITSD-68385",
@@ -9783,7 +9761,18 @@
           "resumen": "Eliminar permiso de conexión en el extranjero 6 de febrero de 2026 usuario Chris"
         },
         {
-          "id": "ITSD-68374",
+          "id": "ITSD-68310",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 145,
+          "frustracion": 100.0,
+          "incumplimiento": 62.0,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Necesitamos abrir SGM y luego apoyo para cierre de metas ya que no logramos que "
+        },
+        {
+          "id": "ITSD-68376",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -9791,21 +9780,21 @@
           "frustracion": 50.0,
           "incumplimiento": 62.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Quitar permisos de conexión al extranjero el 4 de febrero de 2026 al usuario xsv"
+          "resumen": "Configuración e implementación de licencia BI usuario Alejandro Eblen"
         },
         {
-          "id": "ITSD-68556",
+          "id": "ITSD-68342",
           "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "En Nivel 2",
-          "dias": 144,
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 145,
           "frustracion": 50.0,
-          "incumplimiento": 61.8,
+          "incumplimiento": 62.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Factura Electrónica / Campo de MPN"
+          "resumen": "Cambio de licenciamiento office de escritorio E5 a los usuarios: Josselyn Vargas"
         },
         {
-          "id": "ITSD-68436",
+          "id": "ITSD-68445",
           "empresa": "Intcomex",
           "prioridad": "Alta",
           "estado": "Cerrado",
@@ -9813,18 +9802,7 @@
           "frustracion": 100.0,
           "incumplimiento": 61.8,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "por favor subir el archivo carga bach de recepciones esd que no se ejecutaron en"
-        },
-        {
-          "id": "ITSD-68537",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 144,
-          "frustracion": 100.0,
-          "incumplimiento": 61.8,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Se cambio la zona horaria sola a Costa Rica en lugar de mantener argentina como "
+          "resumen": "Sistema caido wmstool"
         },
         {
           "id": "ITSD-68441",
@@ -9838,29 +9816,7 @@
           "resumen": "Dashboard de autopay / margen de venta"
         },
         {
-          "id": "ITSD-68520",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 144,
-          "frustracion": 50.0,
-          "incumplimiento": 61.8,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Quitar permisos del extranjero el 14 de febrero de 2026 usuaria xusaarco"
-        },
-        {
-          "id": "ITSD-68518",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 144,
-          "frustracion": 50.0,
-          "incumplimiento": 61.8,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Asignar permiso en el extranjero el 8 de febrero de 2026 Usuaria xusaarco"
-        },
-        {
-          "id": "ITSD-68445",
+          "id": "ITSD-68537",
           "empresa": "Intcomex",
           "prioridad": "Alta",
           "estado": "Cerrado",
@@ -9868,7 +9824,7 @@
           "frustracion": 100.0,
           "incumplimiento": 61.8,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Sistema caido wmstool"
+          "resumen": "Se cambio la zona horaria sola a Costa Rica en lugar de mantener argentina como "
         },
         {
           "id": "ITSD-68440",
@@ -9893,6 +9849,39 @@
           "resumen": "EQUIPO PRESENTA FALLA AL TECLEAR"
         },
         {
+          "id": "ITSD-68518",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 144,
+          "frustracion": 50.0,
+          "incumplimiento": 61.8,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Asignar permiso en el extranjero el 8 de febrero de 2026 Usuaria xusaarco"
+        },
+        {
+          "id": "ITSD-68520",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 144,
+          "frustracion": 50.0,
+          "incumplimiento": 61.8,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Quitar permisos del extranjero el 14 de febrero de 2026 usuaria xusaarco"
+        },
+        {
+          "id": "ITSD-68567",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 144,
+          "frustracion": 50.0,
+          "incumplimiento": 61.8,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Eliminar permiso de conexión en el extranjero 8 de febrero de 2026 usuario Artur"
+        },
+        {
           "id": "ITSD-68480",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9904,6 +9893,28 @@
           "resumen": "retirar permiso en el extranjero el 12 de febrero de 2026"
         },
         {
+          "id": "ITSD-68436",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 144,
+          "frustracion": 100.0,
+          "incumplimiento": 61.8,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "por favor subir el archivo carga bach de recepciones esd que no se ejecutaron en"
+        },
+        {
+          "id": "ITSD-68556",
+          "empresa": "Intcomex",
+          "prioridad": "Baja",
+          "estado": "En Nivel 2",
+          "dias": 144,
+          "frustracion": 50.0,
+          "incumplimiento": 61.8,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Factura Electrónica / Campo de MPN"
+        },
+        {
           "id": "ITSD-68596",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -9913,17 +9924,6 @@
           "incumplimiento": 61.7,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "retirar permiso en el extranjero el 06 de febrero de 2026"
-        },
-        {
-          "id": "ITSD-68567",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 143,
-          "frustracion": 50.0,
-          "incumplimiento": 61.7,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Eliminar permiso de conexión en el extranjero 8 de febrero de 2026 usuario Artur"
         },
         {
           "id": "ITSD-68631",
@@ -9948,7 +9948,7 @@
           "resumen": "Dllo.-Disclaimer facturas >6 meses"
         },
         {
-          "id": "ITSD-68760",
+          "id": "ITSD-68805",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -9956,10 +9956,10 @@
           "frustracion": 50.0,
           "incumplimiento": 61.6,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración y acceso a buzón compartido usuarios Johanna Rodriguez - Arianna B"
+          "resumen": "Despliegue en producción"
         },
         {
-          "id": "ITSD-68795",
+          "id": "ITSD-68803",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -9967,73 +9967,7 @@
           "frustracion": 50.0,
           "incumplimiento": 61.6,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Dllo.-Filtrar datos de la factura"
-        },
-        {
-          "id": "ITSD-68801",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 142,
-          "frustracion": 50.0,
-          "incumplimiento": 61.6,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Dllo.-Pruebas técnicas"
-        },
-        {
-          "id": "ITSD-68753",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 142,
-          "frustracion": 50.0,
-          "incumplimiento": 61.6,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuracion y acceso a los buzones de los usuarios Yiselis Perez, Leidy Yohana"
-        },
-        {
-          "id": "ITSD-68798",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 142,
-          "frustracion": 50.0,
-          "incumplimiento": 61.6,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Dllo.-Analytics"
-        },
-        {
-          "id": "ITSD-68792",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 142,
-          "frustracion": 50.0,
-          "incumplimiento": 61.6,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Diseño técnico"
-        },
-        {
-          "id": "ITSD-68797",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 142,
-          "frustracion": 50.0,
-          "incumplimiento": 61.6,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Dllo.-Variable de entorno (por país)"
-        },
-        {
-          "id": "ITSD-68739",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 142,
-          "frustracion": 100.0,
-          "incumplimiento": 61.6,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Scale caído, no permite liberar, comentario Consultar el Audit Log"
+          "resumen": "Pruebas QA"
         },
         {
           "id": "ITSD-68812",
@@ -10047,7 +9981,84 @@
           "resumen": "Eliminar Usuario correo a grupo de correo"
         },
         {
-          "id": "ITSD-68738",
+          "id": "ITSD-68797",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 142,
+          "frustracion": 50.0,
+          "incumplimiento": 61.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Dllo.-Variable de entorno (por país)"
+        },
+        {
+          "id": "ITSD-68798",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 142,
+          "frustracion": 50.0,
+          "incumplimiento": 61.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Dllo.-Analytics"
+        },
+        {
+          "id": "ITSD-68760",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 142,
+          "frustracion": 50.0,
+          "incumplimiento": 61.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración y acceso a buzón compartido usuarios Johanna Rodriguez - Arianna B"
+        },
+        {
+          "id": "ITSD-68792",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 142,
+          "frustracion": 50.0,
+          "incumplimiento": 61.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Diseño técnico"
+        },
+        {
+          "id": "ITSD-68801",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 142,
+          "frustracion": 50.0,
+          "incumplimiento": 61.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Dllo.-Pruebas técnicas"
+        },
+        {
+          "id": "ITSD-68794",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 142,
+          "frustracion": 50.0,
+          "incumplimiento": 61.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Dllo.-Validar existencia de la factura"
+        },
+        {
+          "id": "ITSD-68804",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 142,
+          "frustracion": 50.0,
+          "incumplimiento": 61.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Pruebas UAT"
+        },
+        {
+          "id": "ITSD-68739",
           "empresa": "Intcomex",
           "prioridad": "Alta",
           "estado": "Cerrado",
@@ -10055,7 +10066,18 @@
           "frustracion": 100.0,
           "incumplimiento": 61.6,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "XCR problema de audit log Cycle count plan insight"
+          "resumen": "Scale caído, no permite liberar, comentario Consultar el Audit Log"
+        },
+        {
+          "id": "ITSD-68753",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 142,
+          "frustracion": 50.0,
+          "incumplimiento": 61.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuracion y acceso a los buzones de los usuarios Yiselis Perez, Leidy Yohana"
         },
         {
           "id": "ITSD-68799",
@@ -10080,39 +10102,6 @@
           "resumen": "Dllo.-Agregar nueva columna en órdenes \"factura\" con los respectivos archivos a "
         },
         {
-          "id": "ITSD-68804",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 142,
-          "frustracion": 50.0,
-          "incumplimiento": 61.6,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Pruebas UAT"
-        },
-        {
-          "id": "ITSD-68794",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 142,
-          "frustracion": 50.0,
-          "incumplimiento": 61.6,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Dllo.-Validar existencia de la factura"
-        },
-        {
-          "id": "ITSD-68805",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 142,
-          "frustracion": 50.0,
-          "incumplimiento": 61.6,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Despliegue en producción"
-        },
-        {
           "id": "ITSD-68802",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -10135,7 +10124,18 @@
           "resumen": "Configuración y acceso a buzón compartido usuarios Cielo Andrea Molina - Brayan "
         },
         {
-          "id": "ITSD-68803",
+          "id": "ITSD-68738",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 142,
+          "frustracion": 100.0,
+          "incumplimiento": 61.6,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "XCR problema de audit log Cycle count plan insight"
+        },
+        {
+          "id": "ITSD-68795",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -10143,7 +10143,7 @@
           "frustracion": 50.0,
           "incumplimiento": 61.6,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Pruebas QA"
+          "resumen": "Dllo.-Filtrar datos de la factura"
         },
         {
           "id": "ITSD-69026",
@@ -10155,28 +10155,6 @@
           "incumplimiento": 61.5,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Configuración e implementación de licencia BI usuario Cesar Baquero"
-        },
-        {
-          "id": "ITSD-68910",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 141,
-          "frustracion": 50.0,
-          "incumplimiento": 61.5,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Quitar permiso USB el 01 de marzo de 2026 al finalizar la jornada al usuario wga"
-        },
-        {
-          "id": "ITSD-69046",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 141,
-          "frustracion": 50.0,
-          "incumplimiento": 61.5,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Quitar permiso USB 28 de febrero de 2026 usuarios Oreana Martínez - Elizabeth Pe"
         },
         {
           "id": "ITSD-68981",
@@ -10201,6 +10179,17 @@
           "resumen": "No sale la marca OURA en accesorios"
         },
         {
+          "id": "ITSD-68910",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 141,
+          "frustracion": 50.0,
+          "incumplimiento": 61.5,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Quitar permiso USB el 01 de marzo de 2026 al finalizar la jornada al usuario wga"
+        },
+        {
           "id": "ITSD-68957",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -10223,6 +10212,17 @@
           "resumen": "Quitar permiso USB 1 de marzo de 2026 usuario Aaron Liñan"
         },
         {
+          "id": "ITSD-69046",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 141,
+          "frustracion": 50.0,
+          "incumplimiento": 61.5,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Quitar permiso USB 28 de febrero de 2026 usuarios Oreana Martínez - Elizabeth Pe"
+        },
+        {
           "id": "ITSD-69052",
           "empresa": "Intcomex",
           "prioridad": "Alta",
@@ -10232,39 +10232,6 @@
           "incumplimiento": 61.4,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Chat no funciona"
-        },
-        {
-          "id": "ITSD-69130",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 138,
-          "frustracion": 50.0,
-          "incumplimiento": 61.1,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración y acceso de VPN usuario Didier Castaño"
-        },
-        {
-          "id": "ITSD-69078",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 138,
-          "frustracion": 50.0,
-          "incumplimiento": 61.1,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario Diego Vallejo"
-        },
-        {
-          "id": "ITSD-69067",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 138,
-          "frustracion": 100.0,
-          "incumplimiento": 61.1,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "xcr no sube a trax"
         },
         {
           "id": "ITSD-69137",
@@ -10278,6 +10245,17 @@
           "resumen": "Gestion de causas raiz WMS Escale"
         },
         {
+          "id": "ITSD-69078",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 138,
+          "frustracion": 50.0,
+          "incumplimiento": 61.1,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración e implementación de licencia BI usuario Diego Vallejo"
+        },
+        {
           "id": "ITSD-69135",
           "empresa": "Intcomex",
           "prioridad": "Alta",
@@ -10287,6 +10265,28 @@
           "incumplimiento": 61.1,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "solicitud de revision de red inalambrica y cableada sin servicio de navegacion e"
+        },
+        {
+          "id": "ITSD-69130",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 138,
+          "frustracion": 50.0,
+          "incumplimiento": 61.1,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración y acceso de VPN usuario Didier Castaño"
+        },
+        {
+          "id": "ITSD-69067",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 138,
+          "frustracion": 100.0,
+          "incumplimiento": 61.1,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "xcr no sube a trax"
         },
         {
           "id": "ITSD-69147",
@@ -10300,17 +10300,6 @@
           "resumen": "Quitar permisos de conexión al extranjero el 13 de febrero de 2026 al usuario jm"
         },
         {
-          "id": "ITSD-69293",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 137,
-          "frustracion": 50.0,
-          "incumplimiento": 61.0,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Pruebas"
-        },
-        {
           "id": "ITSD-69229",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -10320,6 +10309,17 @@
           "incumplimiento": 61.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Configuración e implementación de licencia BI usuario Anderson Ely Veliz"
+        },
+        {
+          "id": "ITSD-69293",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 137,
+          "frustracion": 50.0,
+          "incumplimiento": 61.0,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Pruebas"
         },
         {
           "id": "ITSD-69302",
@@ -10333,17 +10333,6 @@
           "resumen": "Configuración y acceso a buzón compartido usuario Katherine Jaen"
         },
         {
-          "id": "ITSD-69398",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Nuevo",
-          "dias": 136,
-          "frustracion": 50.0,
-          "incumplimiento": 60.9,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario Carlos Guijarro."
-        },
-        {
           "id": "ITSD-69341",
           "empresa": "Intcomex",
           "prioridad": "Baja",
@@ -10353,6 +10342,17 @@
           "incumplimiento": 60.9,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Novedad Campo Source pedidos Webd"
+        },
+        {
+          "id": "ITSD-69398",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Nuevo",
+          "dias": 136,
+          "frustracion": 50.0,
+          "incumplimiento": 60.9,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración e implementación de licencia BI usuario Carlos Guijarro."
         },
         {
           "id": "ITSD-69430",
@@ -10399,17 +10399,6 @@
           "resumen": "Quitar permisos del extranjero el 16 de febrero usuaria xcrdpach"
         },
         {
-          "id": "ITSD-69540",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 135,
-          "frustracion": 50.0,
-          "incumplimiento": 60.8,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Quitar permisos de conexión al extranjero el 8 de marzo de 2026 al usuario Juan "
-        },
-        {
           "id": "ITSD-78379",
           "empresa": "Intcomex",
           "prioridad": "Baja",
@@ -10421,15 +10410,26 @@
           "resumen": "Computador no permanece encendido ni 10 minutos sin cargador"
         },
         {
-          "id": "ITSD-69637",
+          "id": "ITSD-69540",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
-          "dias": 134,
+          "dias": 135,
           "frustracion": 50.0,
+          "incumplimiento": 60.8,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Quitar permisos de conexión al extranjero el 8 de marzo de 2026 al usuario Juan "
+        },
+        {
+          "id": "ITSD-69681",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 134,
+          "frustracion": 100.0,
           "incumplimiento": 60.7,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Eliminar permiso de conexión en el extranjero el 12 de febrero de 2026 al usuari"
+          "resumen": "My phone is not working - no sound."
         },
         {
           "id": "ITSD-69639",
@@ -10465,15 +10465,15 @@
           "resumen": "Instalar licencia de Project recién asignada al usuario Cesar Baquero"
         },
         {
-          "id": "ITSD-69681",
+          "id": "ITSD-69637",
           "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
+          "prioridad": "Media",
+          "estado": "Terminado",
           "dias": 134,
-          "frustracion": 100.0,
+          "frustracion": 50.0,
           "incumplimiento": 60.7,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "My phone is not working - no sound."
+          "resumen": "Eliminar permiso de conexión en el extranjero el 12 de febrero de 2026 al usuari"
         },
         {
           "id": "ITSD-78450",
@@ -10487,15 +10487,26 @@
           "resumen": "No refleja información"
         },
         {
-          "id": "ITSD-69758",
+          "id": "ITSD-69770",
           "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
+          "prioridad": "Baja",
+          "estado": "Terminado",
           "dias": 131,
-          "frustracion": 100.0,
+          "frustracion": 50.0,
           "incumplimiento": 60.3,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "solicitud de revisión de Core de infra al parecer no esta funcionando"
+          "resumen": "Asignar permiso en el extranjero el 19 de marzo de 2026 usuario Sebastián Serna "
+        },
+        {
+          "id": "ITSD-69860",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 131,
+          "frustracion": 50.0,
+          "incumplimiento": 60.3,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Configuración e implementación de licencia BI usuario Meyer Shalom"
         },
         {
           "id": "ITSD-69824",
@@ -10509,17 +10520,6 @@
           "resumen": "Hola si porfavor me pueden dar acceso a power bi. Que estoy trantando der ver un"
         },
         {
-          "id": "ITSD-69781",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 131,
-          "frustracion": 100.0,
-          "incumplimiento": 60.3,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "No funcionan TVs de sucursal vallejo"
-        },
-        {
           "id": "ITSD-69771",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -10531,15 +10531,26 @@
           "resumen": "Quitar permisos del extranjero el 3 de abril de 2026 usuario Sebastián Serna Bal"
         },
         {
-          "id": "ITSD-69770",
+          "id": "ITSD-69758",
           "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "Terminado",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
           "dias": 131,
-          "frustracion": 50.0,
+          "frustracion": 100.0,
           "incumplimiento": 60.3,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Asignar permiso en el extranjero el 19 de marzo de 2026 usuario Sebastián Serna "
+          "resumen": "solicitud de revisión de Core de infra al parecer no esta funcionando"
+        },
+        {
+          "id": "ITSD-69781",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 131,
+          "frustracion": 100.0,
+          "incumplimiento": 60.3,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "No funcionan TVs de sucursal vallejo"
         },
         {
           "id": "ITSD-69991",
@@ -10551,17 +10562,6 @@
           "incumplimiento": 60.2,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
           "resumen": "Retirar licencias copilot a los usuarios 21 usuarios mencionado el 20 de febrero"
-        },
-        {
-          "id": "ITSD-69860",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 130,
-          "frustracion": 50.0,
-          "incumplimiento": 60.2,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuario Meyer Shalom"
         },
         {
           "id": "ITSD-69871",
@@ -10597,17 +10597,6 @@
           "resumen": "Realizar baja el 17 de marzo de 2026 de usuaria Veronica Calas vcala420"
         },
         {
-          "id": "ITSD-70104",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 129,
-          "frustracion": 50.0,
-          "incumplimiento": 60.1,
-          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Instalacion de licencia power bi a usuaria Paula Rodriguez recien asignada"
-        },
-        {
           "id": "ITSD-70003",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -10619,15 +10608,26 @@
           "resumen": "Actualizar licencia de Teams premium a Pathros Manay y Erick Gonzales recién asi"
         },
         {
-          "id": "ITSD-70187",
+          "id": "ITSD-70120",
           "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "Derivar a iniciati",
-          "dias": 128,
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 129,
           "frustracion": 50.0,
-          "incumplimiento": 60.0,
+          "incumplimiento": 60.1,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "PBI-Scale Trans History"
+          "resumen": "Configuración e implementación de licencia BI usuarioLucia Conza"
+        },
+        {
+          "id": "ITSD-70104",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 129,
+          "frustracion": 50.0,
+          "incumplimiento": 60.1,
+          "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
+          "resumen": "Instalacion de licencia power bi a usuaria Paula Rodriguez recien asignada"
         },
         {
           "id": "ITSD-70159",
@@ -10641,26 +10641,15 @@
           "resumen": "Eliminar Usuario correo a grupo de correo"
         },
         {
-          "id": "ITSD-70120",
+          "id": "ITSD-70187",
           "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
+          "prioridad": "Baja",
+          "estado": "Derivar a iniciati",
           "dias": 128,
           "frustracion": 50.0,
           "incumplimiento": 60.0,
           "recomendacion": "Incumplimiento inminente: contacto y mitigacion ya",
-          "resumen": "Configuración e implementación de licencia BI usuarioLucia Conza"
-        },
-        {
-          "id": "ITSD-70340",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 127,
-          "frustracion": 50.0,
-          "incumplimiento": 59.9,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Configuración e implementación de licencia BI usuario Anahi Caal"
+          "resumen": "PBI-Scale Trans History"
         },
         {
           "id": "ITSD-70314",
@@ -10672,6 +10661,17 @@
           "incumplimiento": 59.9,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "Configuración e implementación de licencia BI usuario Natalia Ortiz"
+        },
+        {
+          "id": "ITSD-70340",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 127,
+          "frustracion": 50.0,
+          "incumplimiento": 59.9,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Configuración e implementación de licencia BI usuario Anahi Caal"
         },
         {
           "id": "ITSD-70305",
@@ -10696,17 +10696,6 @@
           "resumen": "´prueba problema"
         },
         {
-          "id": "ITSD-70388",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 124,
-          "frustracion": 50.0,
-          "incumplimiento": 59.5,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Asignar permiso de conexión al extranjero el 3 de marzo de 2026 al usuario Maria"
-        },
-        {
           "id": "ITSD-70389",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -10718,15 +10707,15 @@
           "resumen": "Quitar permisos de conexión al extranjero el 13 de marzo de 2026 al usuario Mari"
         },
         {
-          "id": "ITSD-70482",
+          "id": "ITSD-70434",
           "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
+          "prioridad": "Media",
+          "estado": "Terminado",
           "dias": 124,
-          "frustracion": 100.0,
+          "frustracion": 50.0,
           "incumplimiento": 59.5,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "No pueod acceder a trax"
+          "resumen": "Configuración y acceso a la VPN a la usuaria Astrid Moreno"
         },
         {
           "id": "ITSD-70441",
@@ -10751,15 +10740,15 @@
           "resumen": "validacion de proyecto"
         },
         {
-          "id": "ITSD-70434",
+          "id": "ITSD-70482",
           "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
           "dias": 124,
-          "frustracion": 50.0,
+          "frustracion": 100.0,
           "incumplimiento": 59.5,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "Configuración y acceso a la VPN a la usuaria Astrid Moreno"
+          "resumen": "No pueod acceder a trax"
         },
         {
           "id": "ITSD-70415",
@@ -10771,6 +10760,28 @@
           "incumplimiento": 59.5,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "Quitar permisos de conexión al extranjero el 8 de marzo de 2025 al usuario Gabri"
+        },
+        {
+          "id": "ITSD-70388",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 124,
+          "frustracion": 50.0,
+          "incumplimiento": 59.5,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Asignar permiso de conexión al extranjero el 3 de marzo de 2026 al usuario Maria"
+        },
+        {
+          "id": "ITSD-70587",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 123,
+          "frustracion": 100.0,
+          "incumplimiento": 59.4,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Cuando se genera una reunion  por el Oultook No crea el LINK de TEAMS de la REUN"
         },
         {
           "id": "ITSD-70650",
@@ -10795,39 +10806,6 @@
           "resumen": "Configuración y acceso del usuario José Alejandro Vargas al buzón compartido [EM"
         },
         {
-          "id": "ITSD-70587",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 123,
-          "frustracion": 100.0,
-          "incumplimiento": 59.4,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Cuando se genera una reunion  por el Oultook No crea el LINK de TEAMS de la REUN"
-        },
-        {
-          "id": "ITSD-70705",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 122,
-          "frustracion": 50.0,
-          "incumplimiento": 59.3,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Actualización servidores"
-        },
-        {
-          "id": "ITSD-70707",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 122,
-          "frustracion": 50.0,
-          "incumplimiento": 59.3,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Pruebas y Eliminación de Snapshot"
-        },
-        {
           "id": "ITSD-70722",
           "empresa": "Intcomex",
           "prioridad": "Baja",
@@ -10837,50 +10815,6 @@
           "incumplimiento": 59.3,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "SE SOLICITA UN CABEZAL PARA IMPRESORA ZT231"
-        },
-        {
-          "id": "ITSD-70798",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 122,
-          "frustracion": 50.0,
-          "incumplimiento": 59.3,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Configurar buzon compartido Vendor_claims a la bandeja del usuario Humberto zamo"
-        },
-        {
-          "id": "ITSD-70819",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "En Investigación y",
-          "dias": 122,
-          "frustracion": 50.0,
-          "incumplimiento": 59.3,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Regla correos Yopmail y similares"
-        },
-        {
-          "id": "ITSD-79733",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "En Nivel 2",
-          "dias": 37,
-          "frustracion": 100.0,
-          "incumplimiento": 59.3,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "URGENTE SOLICITUD DE ACTUALIZACIÓN EN TRAX DE LA RESOLUCIÓN DE DOCUMENTO SOPORTE"
-        },
-        {
-          "id": "ITSD-70820",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 122,
-          "frustracion": 50.0,
-          "incumplimiento": 59.3,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Revision de acceso a reporte en Power Bi"
         },
         {
           "id": "ITSD-79807",
@@ -10894,6 +10828,17 @@
           "resumen": "Docuware caido - 21 May"
         },
         {
+          "id": "ITSD-70705",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 122,
+          "frustracion": 50.0,
+          "incumplimiento": 59.3,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Actualización servidores"
+        },
+        {
           "id": "ITSD-70706",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -10905,15 +10850,59 @@
           "resumen": "Snapshot Servidores"
         },
         {
-          "id": "ITSD-79887",
+          "id": "ITSD-70819",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "En Investigación y",
+          "dias": 122,
+          "frustracion": 50.0,
+          "incumplimiento": 59.3,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Regla correos Yopmail y similares"
+        },
+        {
+          "id": "ITSD-70798",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 122,
+          "frustracion": 50.0,
+          "incumplimiento": 59.3,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Configurar buzon compartido Vendor_claims a la bandeja del usuario Humberto zamo"
+        },
+        {
+          "id": "ITSD-79733",
           "empresa": "Intcomex",
           "prioridad": "Baja",
-          "estado": "En Nivel 1",
-          "dias": 36,
+          "estado": "En Nivel 2",
+          "dias": 37,
           "frustracion": 100.0,
-          "incumplimiento": 59.2,
+          "incumplimiento": 59.3,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "Solicito cambio de PC bateria no dura"
+          "resumen": "URGENTE SOLICITUD DE ACTUALIZACIÓN EN TRAX DE LA RESOLUCIÓN DE DOCUMENTO SOPORTE"
+        },
+        {
+          "id": "ITSD-70707",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 122,
+          "frustracion": 50.0,
+          "incumplimiento": 59.3,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Pruebas y Eliminación de Snapshot"
+        },
+        {
+          "id": "ITSD-70820",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 122,
+          "frustracion": 50.0,
+          "incumplimiento": 59.3,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Revision de acceso a reporte en Power Bi"
         },
         {
           "id": "ITSD-70928",
@@ -10927,15 +10916,15 @@
           "resumen": "Quitar permisios en el extranjero el 7 de marzo de 2026 usuarios Franklin Moron,"
         },
         {
-          "id": "ITSD-70845",
+          "id": "ITSD-79887",
           "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 121,
+          "prioridad": "Baja",
+          "estado": "En Nivel 1",
+          "dias": 36,
           "frustracion": 100.0,
           "incumplimiento": 59.2,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "No están completas las ventas del día de ayer"
+          "resumen": "Solicito cambio de PC bateria no dura"
         },
         {
           "id": "ITSD-70968",
@@ -10949,6 +10938,17 @@
           "resumen": "Configuración e implementación de licencia BI usuario Hector Gutierrez"
         },
         {
+          "id": "ITSD-70845",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 121,
+          "frustracion": 100.0,
+          "incumplimiento": 59.2,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "No están completas las ventas del día de ayer"
+        },
+        {
           "id": "ITSD-70926",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -10958,17 +10958,6 @@
           "incumplimiento": 59.2,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "Asignar excepcion en el extranjero el 27 de febrero de 2026 a usuarios Franklin "
-        },
-        {
-          "id": "ITSD-71022",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "En Nivel 1",
-          "dias": 120,
-          "frustracion": 50.0,
-          "incumplimiento": 59.0,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "ACTUALIZACIÓN DE APLICACIONES"
         },
         {
           "id": "ITSD-71084",
@@ -10982,6 +10971,17 @@
           "resumen": "Retirar permiso al usuario solicitado el día 02 de marzo en la tarde"
         },
         {
+          "id": "ITSD-71022",
+          "empresa": "Intcomex",
+          "prioridad": "Baja",
+          "estado": "En Nivel 1",
+          "dias": 120,
+          "frustracion": 50.0,
+          "incumplimiento": 59.0,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "ACTUALIZACIÓN DE APLICACIONES"
+        },
+        {
           "id": "ITSD-80073",
           "empresa": "Intcomex",
           "prioridad": "Baja",
@@ -10991,17 +10991,6 @@
           "incumplimiento": 58.9,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "Error de Serie | Cliente ITEMS S.A. | XGT XGTITE7588"
-        },
-        {
-          "id": "ITSD-71195",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 117,
-          "frustracion": 50.0,
-          "incumplimiento": 58.7,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Retirar permisos el día 17 de marzo"
         },
         {
           "id": "ITSD-80163",
@@ -11015,48 +11004,15 @@
           "resumen": "No da video-No me permite compartir monitor externo"
         },
         {
-          "id": "ITSD-71312",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "CANCELADA",
-          "dias": 116,
-          "frustracion": 50.0,
-          "incumplimiento": 58.6,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Nombre Aplicación"
-        },
-        {
-          "id": "ITSD-80250",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "En Nivel 2",
-          "dias": 31,
-          "frustracion": 100.0,
-          "incumplimiento": 58.6,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Transacciones no llegan a Sovos"
-        },
-        {
-          "id": "ITSD-71331",
+          "id": "ITSD-71195",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
-          "dias": 116,
+          "dias": 117,
           "frustracion": 50.0,
-          "incumplimiento": 58.6,
+          "incumplimiento": 58.7,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "Configuración de licencia E5 usuario rsant657 Rocio Santos"
-        },
-        {
-          "id": "ITSD-80358",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "Pendiente de prove",
-          "dias": 31,
-          "frustracion": 100.0,
-          "incumplimiento": 58.6,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "NO SEMUESTRA MI FIRMA"
+          "resumen": "Retirar permisos el día 17 de marzo"
         },
         {
           "id": "ITSD-71389",
@@ -11081,6 +11037,50 @@
           "resumen": "Configuración y acceso de VPN usuario Erick Moron"
         },
         {
+          "id": "ITSD-80358",
+          "empresa": "Intcomex",
+          "prioridad": "Baja",
+          "estado": "Pendiente de prove",
+          "dias": 31,
+          "frustracion": 100.0,
+          "incumplimiento": 58.6,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "NO SEMUESTRA MI FIRMA"
+        },
+        {
+          "id": "ITSD-80250",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "En Nivel 2",
+          "dias": 31,
+          "frustracion": 100.0,
+          "incumplimiento": 58.6,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Transacciones no llegan a Sovos"
+        },
+        {
+          "id": "ITSD-71331",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 116,
+          "frustracion": 50.0,
+          "incumplimiento": 58.6,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Configuración de licencia E5 usuario rsant657 Rocio Santos"
+        },
+        {
+          "id": "ITSD-71312",
+          "empresa": "Intcomex",
+          "prioridad": "Baja",
+          "estado": "CANCELADA",
+          "dias": 116,
+          "frustracion": 50.0,
+          "incumplimiento": 58.6,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Nombre Aplicación"
+        },
+        {
           "id": "ITSD-71367",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -11090,6 +11090,17 @@
           "incumplimiento": 58.6,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "Configurar Correo Accvent a Daniel Choto"
+        },
+        {
+          "id": "ITSD-71422",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 115,
+          "frustracion": 100.0,
+          "incumplimiento": 58.5,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "No se puede acceder al sistema"
         },
         {
           "id": "ITSD-80458",
@@ -11114,15 +11125,15 @@
           "resumen": "SISTEMA CAIDO"
         },
         {
-          "id": "ITSD-71422",
+          "id": "ITSD-80626",
           "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 115,
+          "prioridad": "Baja",
+          "estado": "Recategorización",
+          "dias": 29,
           "frustracion": 100.0,
-          "incumplimiento": 58.5,
+          "incumplimiento": 58.4,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "No se puede acceder al sistema"
+          "resumen": "Equipo Dell Latitude5490 Serial [NUM] ya no le sirve la batería y si no está con"
         },
         {
           "id": "ITSD-80693",
@@ -11136,15 +11147,15 @@
           "resumen": "No puedo abrir documentos"
         },
         {
-          "id": "ITSD-80626",
+          "id": "ITSD-71641",
           "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "Recategorización",
-          "dias": 29,
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 114,
           "frustracion": 100.0,
-          "incumplimiento": 58.4,
+          "incumplimiento": 58.3,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "Equipo Dell Latitude5490 Serial [NUM] ya no le sirve la batería y si no está con"
+          "resumen": "No me permite entrar con mi password y ya lo cambie..."
         },
         {
           "id": "ITSD-71676",
@@ -11158,15 +11169,15 @@
           "resumen": "Configuración y acceso de VPN usuario Yenny Torres"
         },
         {
-          "id": "ITSD-71641",
+          "id": "ITSD-71770",
           "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 114,
-          "frustracion": 100.0,
-          "incumplimiento": 58.3,
+          "prioridad": "Baja",
+          "estado": "Derivar a iniciati",
+          "dias": 113,
+          "frustracion": 50.0,
+          "incumplimiento": 58.2,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "No me permite entrar con mi password y ya lo cambie..."
+          "resumen": "Cambio marca HyperX (Efectivo para Abril 2, 2026)"
         },
         {
           "id": "ITSD-71794",
@@ -11191,17 +11202,6 @@
           "resumen": "Error formulario Leads"
         },
         {
-          "id": "ITSD-71770",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "Derivar a iniciati",
-          "dias": 113,
-          "frustracion": 50.0,
-          "incumplimiento": 58.2,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Cambio marca HyperX (Efectivo para Abril 2, 2026)"
-        },
-        {
           "id": "ITSD-80883",
           "empresa": "Intcomex",
           "prioridad": "Baja",
@@ -11211,17 +11211,6 @@
           "incumplimiento": 58.0,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "Lenovo End User no actualiza en reprotes de POS"
-        },
-        {
-          "id": "ITSD-71873",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 110,
-          "frustracion": 50.0,
-          "incumplimiento": 57.9,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Parcheo Servidor VendorOuts / Purchasing Dashboard"
         },
         {
           "id": "ITSD-71867",
@@ -11235,17 +11224,6 @@
           "resumen": "No  carga el formulario para  registro de nuevos clientes."
         },
         {
-          "id": "ITSD-71876",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 110,
-          "frustracion": 50.0,
-          "incumplimiento": 57.9,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Parcheo servidores Webstore - Uno a Uno"
-        },
-        {
           "id": "ITSD-71994",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -11255,6 +11233,17 @@
           "incumplimiento": 57.9,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "Revision y configuracion VPN usuaria Johana Herrera, se asignó recien el permiso"
+        },
+        {
+          "id": "ITSD-71869",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 110,
+          "frustracion": 100.0,
+          "incumplimiento": 57.9,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "PORTAL REGISTRO CLIENTES NUEVOS  NO CARGA"
         },
         {
           "id": "ITSD-71934",
@@ -11279,7 +11268,7 @@
           "resumen": "Parcheo Servidores Webstore 6pm (uno a uno)"
         },
         {
-          "id": "ITSD-71988",
+          "id": "ITSD-71873",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -11287,18 +11276,7 @@
           "frustracion": 50.0,
           "incumplimiento": 57.9,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "Quitar permiso del extranjero el 15 de marzo de 2026 usuaria linde Tempro"
-        },
-        {
-          "id": "ITSD-71869",
-          "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 110,
-          "frustracion": 100.0,
-          "incumplimiento": 57.9,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "PORTAL REGISTRO CLIENTES NUEVOS  NO CARGA"
+          "resumen": "Parcheo Servidor VendorOuts / Purchasing Dashboard"
         },
         {
           "id": "ITSD-71878",
@@ -11312,6 +11290,28 @@
           "resumen": "Actualizacion servidores Webstore"
         },
         {
+          "id": "ITSD-71988",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 110,
+          "frustracion": 50.0,
+          "incumplimiento": 57.9,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Quitar permiso del extranjero el 15 de marzo de 2026 usuaria linde Tempro"
+        },
+        {
+          "id": "ITSD-71876",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 110,
+          "frustracion": 50.0,
+          "incumplimiento": 57.9,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Parcheo servidores Webstore - Uno a Uno"
+        },
+        {
           "id": "ITSD-81168",
           "empresa": "Intcomex",
           "prioridad": "Baja",
@@ -11321,28 +11321,6 @@
           "incumplimiento": 57.8,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "La impresión de la FE de una NC presenta un parámetro vacío, por lo tanto da err"
-        },
-        {
-          "id": "ITSD-81093",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "En Nivel 1",
-          "dias": 24,
-          "frustracion": 100.0,
-          "incumplimiento": 57.8,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "La impresora indica que tiene un atasco de papel, ya revisamos en todas las band"
-        },
-        {
-          "id": "ITSD-81125",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Nuevo",
-          "dias": 24,
-          "frustracion": 100.0,
-          "incumplimiento": 57.8,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "la impresora de ventas no tiene tinta y ya no imprime"
         },
         {
           "id": "ITSD-81089",
@@ -11356,15 +11334,48 @@
           "resumen": "La impresión de la FE de una NC presenta un parámetro vacío, por lo tanto da err"
         },
         {
-          "id": "ITSD-72163",
+          "id": "ITSD-81125",
           "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 109,
+          "prioridad": "Media",
+          "estado": "Nuevo",
+          "dias": 24,
+          "frustracion": 100.0,
+          "incumplimiento": 57.8,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "la impresora de ventas no tiene tinta y ya no imprime"
+        },
+        {
+          "id": "ITSD-81093",
+          "empresa": "Intcomex",
+          "prioridad": "Baja",
+          "estado": "En Nivel 1",
+          "dias": 24,
+          "frustracion": 100.0,
+          "incumplimiento": 57.8,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "La impresora indica que tiene un atasco de papel, ya revisamos en todas las band"
+        },
+        {
+          "id": "ITSD-81302",
+          "empresa": "Intcomex",
+          "prioridad": "Baja",
+          "estado": "En Nivel 2",
+          "dias": 23,
           "frustracion": 100.0,
           "incumplimiento": 57.7,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "PROBLEMA CON MICROSOFT EDGE"
+          "resumen": "La impresión de la FE de una NC presenta un parámetro vacío, por lo tanto da err"
+        },
+        {
+          "id": "ITSD-81362",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "En Nivel 2",
+          "dias": 23,
+          "frustracion": 100.0,
+          "incumplimiento": 57.7,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "El trax no esta mostrando el pre-impresos"
         },
         {
           "id": "ITSD-72049",
@@ -11378,39 +11389,6 @@
           "resumen": "Accesos a Marcador Bodega Edvin José Meléndez Ochoa"
         },
         {
-          "id": "ITSD-72252",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "En consulta a usua",
-          "dias": 109,
-          "frustracion": 50.0,
-          "incumplimiento": 57.7,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Solicitud de Homologación de operador - Operadores Fulfillment México"
-        },
-        {
-          "id": "ITSD-72253",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "En Nivel 1",
-          "dias": 109,
-          "frustracion": 50.0,
-          "incumplimiento": 57.7,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Solicitud de Validación de Configuración: Parámetro 8002 y operador– Clientes Fu"
-        },
-        {
-          "id": "ITSD-72190",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 109,
-          "frustracion": 50.0,
-          "incumplimiento": 57.7,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Configuración y acceso del usuario Katherine Madrigal al buzón compartido  [EMAI"
-        },
-        {
           "id": "ITSD-72135",
           "empresa": "Intcomex",
           "prioridad": "Alta",
@@ -11422,7 +11400,7 @@
           "resumen": "Contenedores sin fechas de llegada y fechas promesas actualizadas"
         },
         {
-          "id": "ITSD-72048",
+          "id": "ITSD-72190",
           "empresa": "Intcomex",
           "prioridad": "Media",
           "estado": "Terminado",
@@ -11430,7 +11408,7 @@
           "frustracion": 50.0,
           "incumplimiento": 57.7,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "Accesos a Marcador Bodega Kevin Josue Cuevas Najera"
+          "resumen": "Configuración y acceso del usuario Katherine Madrigal al buzón compartido  [EMAI"
         },
         {
           "id": "ITSD-72249",
@@ -11455,6 +11433,17 @@
           "resumen": "Accesos a Marcador Bodega Leonel André Ordoñez Estrada"
         },
         {
+          "id": "ITSD-72163",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 109,
+          "frustracion": 100.0,
+          "incumplimiento": 57.7,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "PROBLEMA CON MICROSOFT EDGE"
+        },
+        {
           "id": "ITSD-81282",
           "empresa": "Intcomex",
           "prioridad": "Baja",
@@ -11466,26 +11455,37 @@
           "resumen": "No puedo insertar el link de teams, al momento de programar una nueva reunión"
         },
         {
-          "id": "ITSD-81302",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "En Nivel 2",
-          "dias": 23,
-          "frustracion": 100.0,
-          "incumplimiento": 57.7,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "La impresión de la FE de una NC presenta un parámetro vacío, por lo tanto da err"
-        },
-        {
-          "id": "ITSD-81362",
+          "id": "ITSD-72253",
           "empresa": "Intcomex",
           "prioridad": "Media",
-          "estado": "En Nivel 2",
-          "dias": 23,
-          "frustracion": 100.0,
+          "estado": "En Nivel 1",
+          "dias": 109,
+          "frustracion": 50.0,
           "incumplimiento": 57.7,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "El trax no esta mostrando el pre-impresos"
+          "resumen": "Solicitud de Validación de Configuración: Parámetro 8002 y operador– Clientes Fu"
+        },
+        {
+          "id": "ITSD-72048",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 109,
+          "frustracion": 50.0,
+          "incumplimiento": 57.7,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Accesos a Marcador Bodega Kevin Josue Cuevas Najera"
+        },
+        {
+          "id": "ITSD-72252",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "En consulta a usua",
+          "dias": 109,
+          "frustracion": 50.0,
+          "incumplimiento": 57.7,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Solicitud de Homologación de operador - Operadores Fulfillment México"
         },
         {
           "id": "ITSD-72309",
@@ -11532,17 +11532,6 @@
           "resumen": "No me permite accesar Workday"
         },
         {
-          "id": "ITSD-72601",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 106,
-          "frustracion": 50.0,
-          "incumplimiento": 57.4,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Quitar permiso de conexión al extranjero el 15 de marzo de 2026 usuario Maria Lu"
-        },
-        {
           "id": "ITSD-72564",
           "empresa": "Intcomex",
           "prioridad": "Alta",
@@ -11554,15 +11543,26 @@
           "resumen": "No me permite accesar la computadora"
         },
         {
-          "id": "ITSD-72724",
+          "id": "ITSD-72601",
           "empresa": "Intcomex",
-          "prioridad": "Alta",
-          "estado": "Cerrado",
-          "dias": 103,
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 106,
+          "frustracion": 50.0,
+          "incumplimiento": 57.4,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Quitar permiso de conexión al extranjero el 15 de marzo de 2026 usuario Maria Lu"
+        },
+        {
+          "id": "ITSD-81852",
+          "empresa": "Intcomex",
+          "prioridad": "Baja",
+          "estado": "En Nivel 1",
+          "dias": 17,
           "frustracion": 100.0,
           "incumplimiento": 57.0,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "No puedo ingresar correctamente a imgaing"
+          "resumen": "Precio de kit sin asignarse"
         },
         {
           "id": "ITSD-81815",
@@ -11574,6 +11574,17 @@
           "incumplimiento": 57.0,
           "recomendacion": "Vigilar y priorizar",
           "resumen": "Sin acceso a la Webstore 11265 Datec Ltda"
+        },
+        {
+          "id": "ITSD-72724",
+          "empresa": "Intcomex",
+          "prioridad": "Alta",
+          "estado": "Cerrado",
+          "dias": 103,
+          "frustracion": 100.0,
+          "incumplimiento": 57.0,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "No puedo ingresar correctamente a imgaing"
         },
         {
           "id": "ITSD-81841",
@@ -11598,15 +11609,15 @@
           "resumen": "EL SKU AC409BLK50 TIENE 20 UNIDADES QUE NO EXISTEN QUE SE VISUALIZAN ON HAND"
         },
         {
-          "id": "ITSD-81852",
+          "id": "ITSD-72984",
           "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "En Nivel 1",
-          "dias": 17,
-          "frustracion": 100.0,
-          "incumplimiento": 57.0,
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 102,
+          "frustracion": 50.0,
+          "incumplimiento": 56.9,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "Precio de kit sin asignarse"
+          "resumen": "Asignar permiso de conexión al extranjero el 22 de Marzo de 2026 al usuario veli"
         },
         {
           "id": "ITSD-72985",
@@ -11620,6 +11631,17 @@
           "resumen": "Quitar permisos de conexión al extranjero el 4 de abril de 2026 al usuario veliz"
         },
         {
+          "id": "ITSD-72991",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 102,
+          "frustracion": 50.0,
+          "incumplimiento": 56.9,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Configuración Configuración e implementación de licencia BI usuario al usuario y"
+        },
+        {
           "id": "ITSD-73002",
           "empresa": "Intcomex",
           "prioridad": "Media",
@@ -11631,26 +11653,15 @@
           "resumen": "retirar permiso el 20 de marzo"
         },
         {
-          "id": "ITSD-72905",
-          "empresa": "Intcomex",
-          "prioridad": "Baja",
-          "estado": "Pendiente de aprob",
-          "dias": 102,
-          "frustracion": 50.0,
-          "incumplimiento": 56.9,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Agregar Serial Number Lenovo Peru Reportes de Inventario y Ventas - Distributor "
-        },
-        {
-          "id": "ITSD-72984",
+          "id": "ITSD-81945",
           "empresa": "Intcomex",
           "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 102,
-          "frustracion": 50.0,
+          "estado": "En Nivel 1",
+          "dias": 16,
+          "frustracion": 100.0,
           "incumplimiento": 56.9,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "Asignar permiso de conexión al extranjero el 22 de Marzo de 2026 al usuario veli"
+          "resumen": "Datos en Scale no coinciden en Trax"
         },
         {
           "id": "ITSD-81950",
@@ -11675,6 +11686,17 @@
           "resumen": "Firma no actualizada a la nueva posición"
         },
         {
+          "id": "ITSD-72882",
+          "empresa": "Intcomex",
+          "prioridad": "Media",
+          "estado": "Terminado",
+          "dias": 102,
+          "frustracion": 50.0,
+          "incumplimiento": 56.9,
+          "recomendacion": "Vigilar y priorizar",
+          "resumen": "Investigar cómo funcionan los pipelines con el equipo de BI"
+        },
+        {
           "id": "ITSD-72888",
           "empresa": "Intcomex",
           "prioridad": "Alta",
@@ -11697,37 +11719,15 @@
           "resumen": "Ordenes de Licencias de ESD Microsoft no se estan facturando en automatico"
         },
         {
-          "id": "ITSD-72991",
+          "id": "ITSD-72905",
           "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
+          "prioridad": "Baja",
+          "estado": "Pendiente de aprob",
           "dias": 102,
           "frustracion": 50.0,
           "incumplimiento": 56.9,
           "recomendacion": "Vigilar y priorizar",
-          "resumen": "Configuración Configuración e implementación de licencia BI usuario al usuario y"
-        },
-        {
-          "id": "ITSD-81945",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "En Nivel 1",
-          "dias": 16,
-          "frustracion": 100.0,
-          "incumplimiento": 56.9,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Datos en Scale no coinciden en Trax"
-        },
-        {
-          "id": "ITSD-72882",
-          "empresa": "Intcomex",
-          "prioridad": "Media",
-          "estado": "Terminado",
-          "dias": 102,
-          "frustracion": 50.0,
-          "incumplimiento": 56.9,
-          "recomendacion": "Vigilar y priorizar",
-          "resumen": "Investigar cómo funcionan los pipelines con el equipo de BI"
+          "resumen": "Agregar Serial Number Lenovo Peru Reportes de Inventario y Ventas - Distributor "
         }
       ],
       "bti_tabla": [],
